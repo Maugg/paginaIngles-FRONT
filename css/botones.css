@@ -1,11 +1,15 @@
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 400px;
+  height: 328px;
+  background: url(Whose1.svg);
+  background-size: 400px 328px;
+}
 
 body{
   background:#5fab9b;
   font-family: Arial,sans-serif;
-}
-
-a{
-  text-decoration: none;
 }
 
 
@@ -16,6 +20,7 @@ div{
 .bton{
   background: #4f8f6e;
   color:#fff;
+  text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
   font-size: 16px;
   font-weight: bold;
   display: inline-block;

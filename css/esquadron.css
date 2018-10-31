@@ -1,4 +1,12 @@
-@font-face {
+.whose{
+  width: 60px;
+  height: auto;
+  position: relative;
+  left:10px;
+  top: 2px;
+}
+
+@@font-face {
   font-family: escuadron;
   src: url(byt.ttf);
 }
@@ -2593,7 +2601,9 @@ table span.badge {
 .row {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: black;}
+
   .row:after {
     content: "";
     display: table;
@@ -2609,7 +2619,10 @@ table span.badge {
       width: 8.33333%;
       margin-left: auto;
       left: auto;
-      right: auto; }
+      right: auto;
+      background-color: red;
+      margin: 5px;
+    }
     .row .col.s2 {
       width: 16.66667%;
       margin-left: auto;
@@ -3769,7 +3782,7 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #000;
+  color: white;
   font-weight: bold;
   background-color: #ff0000;
   text-align: center;
