@@ -1,0 +1,27 @@
+.puntero:hover{
+  cursor: pointer;
+}
+ 
+.links {
+ color:white;
+}
+
+a.links > span{
+ text-decoration:none;
+}
+ 
+a.links > span:hover{
+ text-decoration:none;
+ color:black;
+}
+
+.uk-background-primary {
+   color: white !important;
+   font-weight: bold !important;
+   font-size: 15px !important;
+}
+
+.b-tabla{
+
+    border-radius: 15px;
+}

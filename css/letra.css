@@ -1,0 +1,23 @@
+@font-face {
+  font-family:escuadron;
+  src: url("../resources/css/byt.ttf");
+}
+
+@font-face {
+    font-family:gochih;
+    src: url("../resources/css/GochiHand-Regular.ttf");
+}
+
+.lescuadron{
+	font-family:escuadron;
+}
+
+.gochi{
+    font-family:gochih;
+
+}
+.letra-logo{
+font-size: 27px;
+position: relative;
+top: 10px;
+}

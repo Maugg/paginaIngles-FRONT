@@ -1,0 +1,19 @@
+
+
+body {
+/* background:url("/home/mauricio/Documentos/Curso web/Plataforma noldi/EscuadronPlataforma/img/kids2.jpeg"); */
+background-image:url("img/kids2.jpeg");
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment:fixed;
+background-size:cover;
+}
+
+input[type="text"]{
+  background-color: rgba(60, 170, 163, 0.71);
+}
+
+.fondo{
+background-color: rgba(46, 129, 147, 0.5);
+border-radius: 15px;
+}
