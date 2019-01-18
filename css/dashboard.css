@@ -98,9 +98,9 @@
 }
 .left-logo {
 	/* navbar height */
-	height: 52px;
+	height: 60px;
 	line-height: 52px;
-	padding: 0 20px;
+	padding: 0px 20px;
 }
 .custom-logo {
 	height: 32px;
