@@ -21,6 +21,8 @@ a.links > span:hover{
    font-size: 15px !important;
 }
 
+
+
 .boton-paginacion-anterior:enabled {
     background-image: url(../img/boton/anterior-habilitado.svg);
 }

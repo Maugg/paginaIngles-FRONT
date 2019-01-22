@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="../css/estilo-navbar.css">
     <link rel="stylesheet" type="text/css" href="../css/letra.css">
+    <link rel="stylesheet" type="text/css" href="../css/tablas.css">
 </head>
 <body class="">
 
@@ -82,13 +83,7 @@
                 <li class="uk-nav-header">dashboard</li>
 
                 <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li class="uk-parent"><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a>
-                <ul class="uk-nav-sub">
-                    <li><span data-uk-icon="icon: file-text" class="uk-margin-small-right" ></span>Licencias</li>
-                </ul>
-
-                </li>
-
+                <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
                 <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
             </ul>
@@ -114,245 +109,205 @@
     <!-- fin menu lado izquierdo -->
     <!-- CONTENT -->
     <div id="content" data-uk-height-viewport="expand: true">
-        <div class="uk-container uk-container-large uk-visible@m">
+        <div class="uk-container   ">
 
-            <div class="uk-padding">
-                <div class="uk-overflow-hidden">
+            <div class="uk-container-large ">
 
-                    <h1 class="uk-heading-line uk-text-center"><span>Detalles Escuela</span></h1>
-                    <form id="j_idt37" name="j_idt37" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" class="uk-form-stacked" enctype="application/x-www-form-urlencoded">
-                        <input type="hidden" name="j_idt37" value="j_idt37">
 
-                        <div class="uk-grid-small uk-grid" uk-grid="">
-                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column"><label for="j_idt37:input-cct" class="uk-text-capitalize uk-form-label">clave centro trabajo</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-cct" type="text" name="j_idt37:input-cct" value="21DBA0004C" class="uk-input" disabled="disabled">
+                <h1 class="uk-heading-line uk-text-center "><span>Detalles de la Escuela</span></h1>
+
+                <h2 class="uk-text-center uk-margin-medium-top uk-background-primary"><span class="letra-titulo">Datos de la escuela</span></h2>
+
+                <form class="">
+                    <div  uk-grid="" >
+
+
+                                <div class="uk-width-1-5@m uk-width-1-1@s ">
+                                    <label class="uk-form-label" for="cctv" >CCTV</label>
+                                    <input id="cctv" placeholder="21DBA0004C" disabled="disabled" type="text" class="uk-input">
                                 </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-4-5@m"><label for="j_idt37:input-nombre" class="uk-text-capitalize uk-form-label">nombre</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-nombre" type="text" name="j_idt37:input-nombre" value="Benito Juarez" class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-1-5@m uk-grid-margin uk-first-column"><label for="j_idt37:input-cp" class="uk-text-capitalize uk-form-label">código postal</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-cp" type="text" name="j_idt37:input-cp" value="1109 " class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-4-5@m uk-grid-margin"><label for="j_idt37:input-colonia" class="uk-text-capitalize uk-form-label">colonia</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-colonia" type="text" name="j_idt37:input-colonia" value="La Conchita" class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-3-5@m uk-grid-margin uk-first-column"><label for="j_idt37:input-municipio" class="uk-text-capitalize uk-form-label">municipio</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-municipio" type="text" name="j_idt37:input-municipio" value="Álvaro Obregón" class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-2-5@m uk-grid-margin"><label for="j_idt37:input-estado" class="uk-text-capitalize uk-form-label">estado</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-estado" type="text" name="j_idt37:input-estado" value="Ciudad de México" class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
-                            <div class="uk-width-1-1@s uk-width-3-5@m uk-grid-margin uk-first-column"><label for="j_idt37:input-calle" class="uk-text-capitalize uk-form-label">calle</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-calle" type="text" name="j_idt37:input-calle" value="Calle Rafael Cañedo Benítez" class="uk-input" disabled="disabled">
-                                </div>
-                            </div>
 
-                            <div class="uk-width-1-1@s uk-width-1-5@m uk-grid-margin"><label for="j_idt37:input-numero-ext" class="uk-text-capitalize uk-form-label">número exterior</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-numero-ext" type="text" name="j_idt37:input-numero-ext" value="1342 " class="uk-input" disabled="disabled">
+                                <div class="uk-width-3-5@m uk-width-1-1@s" >
+                                    <label class="uk-form-label" for="nombre-escuela" >Nombre</label>
+                                    <input id="nombre-escuela" placeholder="Nombre Escuela" disabled="disabled" type="text" class="uk-input">
                                 </div>
-                            </div>
+                                 <div class="uk-width-1-5@m uk-width-1-1@s">
+                                   <label class="uk-form-label" for="codigo-postal" >Codigo postal</label>
+                                   <input id="codigo-postal" placeholder="72730" disabled="disabled" type="text" class="uk-input">
+                                 </div>
 
-                            <div class="uk-width-1-1@s uk-width-1-5@m uk-grid-margin"><label for="j_idt37:input-numero-interior" class="uk-text-capitalize uk-form-label">número interior</label>
-                                <div class="uk-form-controls"><input id="j_idt37:input-numero-interior" type="text" name="j_idt37:input-numero-interior" class="uk-input" disabled="disabled">
+
+                                <div class="uk-width-1-2@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="colonia" >Colonia</label>
+                                    <input id="colonia" placeholder="Colonia" disabled="disabled" type="text" class="uk-input">
+
                                 </div>
-                            </div>
-
-                            <div class="uk-width-1-1@s uk-width-1-5@m uk-grid-margin uk-first-column"><label for="j_idt37:razon-bloqueo" class="uk-text-capitalize uk-form-label">motivo de bloqueo</label>
-                                <div class="uk-form-controls"><input id="j_idt37:razon-bloqueo" type="text" name="j_idt37:razon-bloqueo" value="Sin bloqueo" class="uk-input" disabled="disabled">
+                                <div class="uk-width-1-2@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="municipio" >Municipio</label>
+                                    <input id="municipio" placeholder="Municipio" disabled="disabled" type="text" class="uk-input">
                                 </div>
-                            </div>
-
-                        </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:2" value="1063219284212397283:1078958227789520491" autocomplete="off">
-                    </form>
-
-                    <h2 class="uk-heading-line uk-text-center"><span>Contactos de la escuela</span></h2><span id="panel-contacto"><table id="tabla-escuela-detalle" class="limite uk-table uk-table-middle uk-table-hover uk-table-striped">
-<thead>
-<tr>
-<th class="uk-background-primary uk-dark" scope="col">
-								Nombre
-							</th>
-<th class="uk-background-primary uk-dark" scope="col">tipo</th>
-<th class="uk-background-primary uk-dark" scope="col">Teléfono</th>
-<th class="uk-background-primary uk-dark" scope="col">opciones</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-							Juan Carlos Flores García
-						</td>
-<td>
-							Administració
-						</td>
-<td>
-							2224-567123
-						</td>
-<td>
-							<div class="uk-inline">
-								<button class="uk-icon-button puntero uk-icon" uk-icon="more-vertical" type="button">   </button>
-								<div uk-dropdown="boundary:.limite; mode: click" class="uk-dropdown">
-									<ul class="uk-nav uk-dropdown-nav">
-<form id="tabla-escuela-detalle:0:j_idt82" name="tabla-escuela-detalle:0:j_idt82" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" enctype="application/x-www-form-urlencoded">
-<input type="hidden" name="tabla-escuela-detalle:0:j_idt82" value="tabla-escuela-detalle:0:j_idt82">
-
-											<li><a href="#"><span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>  <span class="uk-text-middle">editar contacto</span></a></li>
-											<li><a id="tabla-escuela-detalle:0:j_idt82:j_idt84" href="#" onclick="mojarra.ab(this,event,'action',0,0);return false" uk-toggle="target: #modal-elimina-contacto">
-													<span uk-icon="icon: trash" class="uk-margin-small-right uk-icon"></span>
-													<span class="uk-text-middle">eliminar contacto</span></a>
-											</li><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="1063219284212397283:1078958227789520491" autocomplete="off">
-</form>
-									</ul>
-								</div>
-							</div></td>
-</tr>
-<tr>
-<td>
-							Jose Manuel Martinex
-						</td>
-<td>
-							Tipo contacto 1
-						</td>
-<td>
-							1234567
-						</td>
-<td>
-							<div class="uk-inline">
-								<button class="uk-icon-button puntero uk-icon" uk-icon="more-vertical" type="button">   </button>
-								<div uk-dropdown="boundary:.limite; mode: click" class="uk-dropdown">
-									<ul class="uk-nav uk-dropdown-nav">
-<form id="tabla-escuela-detalle:1:j_idt82" name="tabla-escuela-detalle:1:j_idt82" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" enctype="application/x-www-form-urlencoded">
-<input type="hidden" name="tabla-escuela-detalle:1:j_idt82" value="tabla-escuela-detalle:1:j_idt82">
-
-											<li><a href="#"><span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>  <span class="uk-text-middle">editar contacto</span></a></li>
-											<li><a id="tabla-escuela-detalle:1:j_idt82:j_idt84" href="#" onclick="mojarra.ab(this,event,'action',0,0);return false" uk-toggle="target: #modal-elimina-contacto">
-													<span uk-icon="icon: trash" class="uk-margin-small-right uk-icon"><</span>
-													<span class="uk-text-middle">eliminar contacto</span></a>
-											</li><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:4" value="1063219284212397283:1078958227789520491" autocomplete="off">
-</form>
-									</ul>
-								</div>
-							</div></td>
-</tr>
-</tbody>
-</table>
-
-					<div class="uk-flex uk-flex-right uk-margin">
-						<button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-contacto">agregar</button>
-					</div></span>
-                    <div id="modal-contacto" uk-modal="" class="uk-modal">
-                        <div class="uk-modal-dialog">
-                            <button class="uk-modal-close-default uk-close uk-icon" type="button" uk-close=""></button>
-                            <div class="uk-modal-header">
-                                <h2 class="uk-modal-title uk-text-center">Nuevo contacto</h2>
-                            </div>
-                            <form id="formulario-agregar-contacto" name="formulario-agregar-contacto" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" class="uk-form-stacked" enctype="application/x-www-form-urlencoded">
-                                <input type="hidden" name="formulario-agregar-contacto" value="formulario-agregar-contacto">
-
-                                <div class="uk-modal-body">
-                                    <div class="uk-grid-small uk-grid" uk-grid="">
-                                        <div class="uk-width-1-1"><label for="formulario-agregar-contacto:input-nombre-contacto" class="uk-text-capitalize uk-form-label">Nombre</label>
-                                            <div class="uk-form-controls"><input id="formulario-agregar-contacto:input-nombre-contacto" type="text" name="formulario-agregar-contacto:input-nombre-contacto" autocomplete="off" class="uk-input" placeholder="nombre">
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-2"><label for="formulario-agregar-contacto:seleccion-tipo-contacto" class="uk-text-capitalize uk-form-label">tipo</label>
-                                            <div class="uk-form-controls"><select id="formulario-agregar-contacto:seleccion-tipo-contacto" name="formulario-agregar-contacto:seleccion-tipo-contacto" class="uk-select">	<option value="">seleccione una opción</option>
-                                                <option value="-32764">Administració</option>
-                                                <option value="-32765">Coordinador</option>
-                                                <option value="-32767">Subdirector</option>
-                                                <option value="-32763">Tipo contacto 1</option>
-                                                <option value="-32762">Tipo contacto 2</option>
-                                                <option value="-32761">Tipo contacto 3</option>
-                                                <option value="-32760">Tipo contacto 4</option>
-                                            </select>
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-2"><label for="formulario-agregar-contacto:input-telefono" class="uk-text-capitalize uk-form-label">Teléfono</label>
-                                            <div class="uk-form-controls"><input id="formulario-agregar-contacto:input-telefono" type="text" name="formulario-agregar-contacto:input-telefono" autocomplete="off" class="uk-input" placeholder="Teléfono">
-                                            </div>
-                                        </div>
-                                        <div class="uk-width-1-2"><div id="formulario-agregar-contacto:mensajes-error"></div>
-                                        </div>
-                                    </div>
+                                <div class="uk-width-1-5@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="estado" >Estado</label>
+                                    <input id="estado" placeholder="Baja California sur" disabled="disabled" type="text" class="uk-input">
                                 </div>
-                                <div class="uk-modal-footer uk-text-right">
-                                    <button class="uk-button uk-button-default uk-modal-close uk-margin-small-right" type="button">cancelar</button><input id="formulario-agregar-contacto:j_idt110" type="submit" name="formulario-agregar-contacto:j_idt110" value="aceptar" class="uk-button uk-button-primary uk-border-rounded" onclick="mojarra.ab(this,event,'action','@form','@form panel-contacto modal-contacto',{'onevent':cierraModal});return false">
-                                </div><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:5" value="1063219284212397283:1078958227789520491" autocomplete="off">
-                            </form>
-                        </div>
+
+                                <div class="uk-width-3-5@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="calle" >Calle</label>
+                                    <input id="calle" placeholder="Estado" disabled="disabled" type="text" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-5@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="numero-exterior" >Numero Exterior</label>
+                                    <input id="numero-exterior" placeholder="Numero interior" disabled="disabled" type="text" class="uk-input">
+                                </div>
+                                <div class="uk-width-1-5@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="numero-interior" >Numero Interior</label>
+                                    <input id="numero-interior" placeholder="Numero exterior" disabled="disabled" type="text" class="uk-input">
+                                </div>
+                               <div class="uk-width-1-5@m uk-width-1-1@s">
+                                   <label class="uk-form-label" for="estado-bloqueo" >Estado de Bloqueo</label>
+                                    <input id="estado-bloqueo" placeholder="Sin tipo" disabled="disabled" type="text" class="uk-input">
+                               </div>
+                                <div class="uk-width-1-5@m uk-width-1-1@s">
+                                    <label class="uk-form-label" for="licencias" >Licencias</label>
+                                    <input id="licencias" placeholder="Sin licencias" disabled="disabled" type="text" class="uk-input">
+                                </div>
+
+
+
+
                     </div>
-                    <div id="modal-elimina-contacto" uk-modal="" class="uk-modal">
-                        <div class="uk-modal-dialog">
-                            <div class="uk-modal-header">
-                                <h3 class="uk-modal-title uk-text-capitalize uk-text-center uk-text-danger">
-                                    Eliminar contacto
-                                </h3>
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>
-                                    Esta seguro que desea a elminiar el contacto:
-                                </p>
-                            </div>
-                            <div class="uk-modal-footer uk-flex uk-flex-right">
-                                <button class="uk-button uk-button-default uk-modal-close uk-border-rounded uk-margin-right" type="button">cancelar</button>
-                                <form id="formulario-eliminar-contacto" name="formulario-eliminar-contacto" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" enctype="application/x-www-form-urlencoded">
-                                    <input type="hidden" name="formulario-eliminar-contacto" value="formulario-eliminar-contacto">
-                                    <input id="formulario-eliminar-contacto:j_idt113" type="submit" name="formulario-eliminar-contacto:j_idt113" value="eliminar" class="uk-button uk-button-danger uk-modal-close uk-border-rounded" onclick="mojarra.ab(this,event,'action',0,'panel-contacto',{'onevent':actualiza});return false"><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:6" value="1063219284212397283:1078958227789520491" autocomplete="off">
-                                </form>
-                            </div>
-                        </div>
-                    </div>	1
+                </form>
+                <div uk-grid="" class="uk-margin-medium-top ">
+
+                    <div class="uk-width-auto@m uk-overflow-auto uk-width-expand@s ">
+                        <h3 class="uk-text-center uk-heading-line "><span class="">Contactos</span></h3>
+                        <table class="uk-table uk-table-small uk-margin-remove-top uk-table-divider uk-table-hover" >
+                            <thead >
+                                <tr class="uk-background-primary ">
+                                    <th ><span class="letra-titulo">Nombre</span></th>
+                                    <th ><span class="letra-titulo">Tipo</span></th>
+                                    <th><span class="letra-titulo">Telefono</span></th>
+                                    <th><span class="letra-titulo">Opciones</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                    <td>Sin tipo</td>
+                                    <td>(222)2307383</td>
+                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                    <td>Sin tipo</td>
+                                    <td>(222)2307383</td>
+                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                    <td>Sin tipo</td>
+                                    <td>(222)2307383</td>
+                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                    <td>Sin tipo</td>
+                                    <td>(222)2307383</td>
+                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                </tr>
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                    <div class="uk-width-auto@m uk-overflow-auto ">
+
+                        <h3 class=" uk-text-center uk-heading-line"><span>Licencias</span></h3>
+                        <table class="uk-table uk-table-small uk-table-divider uk-table-hover uk-table-middle">
+                            <thead class="uk-text-center">
+                                <tr class="uk-background-primary ">
+                                    <th><span class="letra-titulo">ID</span></th>
+                                    <th class="uk-text-center"><span class="letra-titulo">Usuarios Restantes</span></th>
+                                </tr>
+                            </thead>
+                            <tbody class="uk-text-center">
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr class="">
+                                    <td>2</td>
+                                    <td >52</td>
+                                </tr>
+
+
+
+                            </tbody>
+
+
+                        </table>
+                        <div class="uk-flex uk-flex-center"><button class="uk-button uk-button-primary uk-border-rounded">Agregar</button></div>
+
+
+                    </div>
                 </div>
+
+
+
+
+
+
+
             </div>
 
         </div>
-    </div>    <!-- OFFCANVAS  -->
+    </div>
+
+
+        <!-- OFFCANVAS  -->
     <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
         <div class=" uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-            <button class="uk-offcanvas-close uk-close uk-icon " type="button" data-uk-close></button>
-            <ul class="uk-nav uk-nav-default">
-                <!-- <li class="uk-active"><a href="#">Active</a></li>
-                <li class="uk-parent">
-                  <a href="#">Parent</a>
-                  <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
-                  </ul>
-                </li> -->
-                <li class="uk-nav-header">dashboard</li>
-                <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span>Lista de Escuelas</a></li>
-                <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: comments"></span> Item</a></li>
-                <li class="uk-nav-divider"></li>
-                <!-- <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li> -->
-                <div class="left-content-box uk-margin-top">
+                    <button class="uk-offcanvas-close uk-close uk-icon " type="button" data-uk-close></button>
+                    <ul class="uk-nav uk-nav-default">
+                        <!-- <li class="uk-active"><a href="#">Active</a></li>
+                        <li class="uk-parent">
+                          <a href="#">Parent</a>
+                          <ul class="uk-nav-sub">
+                            <li><a href="#">Sub item</a></li>
+                            <li><a href="#">Sub item</a></li>
+                          </ul>
+                        </li> -->
+                        <li class="uk-nav-header">dashboard</li>
+                        <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span>Lista de Escuelas</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: comments"></span> Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <!-- <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li> -->
+                        <div class="left-content-box uk-margin-top">
 
-                    <h5>Daily Reports</h5>
-                    <div>
-                        <span class="uk-text-small">Escuelas Proximas a caducar <small>(+50)</small></span>
-                        <progress class="uk-progress" value="50" max="100"></progress>
-                    </div>
-                    <div>
-                        <span class="uk-text-small">Total de licencias vendidas <small>(+78)</small></span>
-                        <progress class="uk-progress success" value="78" max="100"></progress>
-                    </div>
-                    <!-- <div>
-                      <span class="uk-text-small">Feedback <small>(-12)</small></span>
-                      <progress class="uk-progress warning" value="12" max="100"></progress>
-                    </div> -->
+                            <h5>Daily Reports</h5>
+                            <div>
+                                <span class="uk-text-small">Escuelas Proximas a caducar <small>(+50)</small></span>
+                                <progress class="uk-progress" value="50" max="100"></progress>
+                            </div>
+                            <div>
+                                <span class="uk-text-small">Total de licencias vendidas <small>(+78)</small></span>
+                                <progress class="uk-progress success" value="78" max="100"></progress>
+                            </div>
+                            <!-- <div>
+                              <span class="uk-text-small">Feedback <small>(-12)</small></span>
+                              <progress class="uk-progress warning" value="12" max="100"></progress>
+                            </div> -->
 
-                </div>
-            </ul>
-            <h3>Title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </ul>
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
+
+
     <!-- /OFFCANVAS -->
-  <!--  </div> -->
+   </div>
 
 <script src="../js/uikit.js" ></script>
 <script src="../js/uikit-icons.js" charset="utf-8"></script>
