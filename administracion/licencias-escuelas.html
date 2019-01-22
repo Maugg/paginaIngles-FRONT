@@ -3,14 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
+    <title>Licencias Escuela</title>
     <link rel="stylesheet" type="text/css" href="../css/uikit.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="../css/estilo-navbar.css">
-    <link rel="stylesheet" type="text/css" href="../css/letra.css">
     <link rel="stylesheet" type="text/css" href="../css/tablas.css">
 </head>
-<body class="">
+<body class="lescuadron">
 <div class="uk-offcanvas-content">
     <header id="top-head" class="uk-position-fixed">
         <div class="uk-container uk-container-expand uk-background-primary">
@@ -20,7 +19,7 @@
 
                 <div class="uk-navbar-left">
                     <div class="uk-navbar-item uk-hidden@m">
-                        <a class="uk-logo" href="#"><img class="custom-logo" src="img/white_escuadron.svg" alt=""></a>
+                        <a class="uk-logo" href="#"><img class="custom-logo" src="../img/white_escuadron.svg" alt=""></a>
                     </div>
                 </div>
 
@@ -106,52 +105,40 @@
     <!-- fin menu lado izquierdo -->
     <!-- CONTENT -->
     <div id="content" data-uk-height-viewport="expand: true">
-        <div class="uk-container uk-container-expand">
-
-            <div class="uk-padding">
-                <div class="uk-overflow-hidden">
-                    <h1  class="uk-heading-line uk-text-center "><span>Licencias Escuelas</span></h1><span id="panel-licencias"></span>
-                    <table id="tabla-licencias-escuelas" class="limite uk-table-middle uk-table-hover uk-table-striped">
-                    <thead class="">
-                    <tr class="">
-                        <th class="uk-background-primary uk-dark" >Nombre Escuela</th>
-                        <th class="uk-background-primary uk-dark" >Número Licencias</th>
-                        <th class="uk-background-primary uk-dark" >Días Restantes</th>
-                        <th class="uk-background-primary uk-dark" >Opciones</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Benito Juarez García</td>
-                            <td>2</td>
-                            <td>730</td>
-                            <td>
-                                <div class="uk-inline">
-                                    <button class="uk-icon-button puntero uk-icon" uk-icon="more-vertical" type="button "> </button>
-                                    <div uk-dropdown="boundary:.limite; mode: click" class="uk-dropdown">
-                                        <ul class="uk-nav uk-dropdown-nav">
-                                            <form id="tabla-licencias-escuelas:0:j_idt82" name="tabla-licencias-escuelas:0:j_idt82" method="post" action="" enctype="application/x-www-form-urlencoded">
-                                                <input type="hidden" name="tabla-licencias-escuelas:0:j_idt82" value="tabla-licencias-escuelas:0:j_idt82">
-                                                <li><a href="#"><span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>  <span class="uk-text-middle">agregar licencia</span></a></li>
-                                                <li><a id="tabla-escuela-detalle:0:j_idt82:j_idt84" href="#" onclick="mojarra.ab(this,event,'action',0,0);return false" uk-toggle="target: #modal-agrega-lincencia">
-                                                    <span uk-icon="icon: trash" class="uk-margin-small-right uk-icon"></span>
-                                                    <span class="uk-text-middle">eliminiar licencia</span></a>
-                                                </li>
-
-                                            </form>
-                                        </ul>
-                                    </div>
-                                </div></td>
-                        </tr>
-                    </tbody>
-                    </table>
-
-                </div>
-            </div>
+        <div class="uk-container">
+            <div class="uk-container-large">
 
             <!--  CONTENIDO  -->
-
-
+            <table class="uk-table uk-table-middle uk-table-hover uk-table-striped">
+                <caption>Licencias</caption>
+                <thead>
+                <tr>
+                    <th class="uk-background-primary uk-dark" scope="col">Table Headins</th>
+                    <th class="uk-background-primary uk-dark" scope="col">Table Heading</th>
+                    <th class="uk-background-primary uk-dark" scope="col">Table Heading</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                    <td>Table Footer</td>
+                    <td>Table Footer</td>
+                    <td>Table Footer</td>
+                </tr>
+                </tfoot>
+                <tbody>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+                <tr>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                    <td>Table Data</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
         </div>
     </div>    <!-- OFFCANVAS  -->
     <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
