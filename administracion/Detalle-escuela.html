@@ -82,7 +82,13 @@
                 <li class="uk-nav-header">dashboard</li>
 
                 <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                <li class="uk-parent"><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a>
+                <ul class="uk-nav-sub">
+                    <li><span data-uk-icon="icon: file-text" class="uk-margin-small-right" ></span>Licencias</li>
+                </ul>
+
+                </li>
+
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
                 <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
             </ul>
@@ -111,7 +117,7 @@
         <div class="uk-container uk-container-large uk-visible@m">
 
             <div class="uk-padding">
-                <div class="uk-overflow-auto">
+                <div class="uk-overflow-hidden">
 
                     <h1 class="uk-heading-line uk-text-center"><span>Detalles Escuela</span></h1>
                     <form id="j_idt37" name="j_idt37" method="post" action="/tecolotl-web/administracion/detalle-escuela.xhtml" class="uk-form-stacked" enctype="application/x-www-form-urlencoded">
@@ -197,7 +203,7 @@
 
 											<li><a href="#"><span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>  <span class="uk-text-middle">editar contacto</span></a></li>
 											<li><a id="tabla-escuela-detalle:0:j_idt82:j_idt84" href="#" onclick="mojarra.ab(this,event,'action',0,0);return false" uk-toggle="target: #modal-elimina-contacto">
-													<span uk-icon="icon: trash" class="uk-margin-small-right uk-icon"><</span>
+													<span uk-icon="icon: trash" class="uk-margin-small-right uk-icon"></span>
 													<span class="uk-text-middle">eliminar contacto</span></a>
 											</li><input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:3" value="1063219284212397283:1078958227789520491" autocomplete="off">
 </form>
