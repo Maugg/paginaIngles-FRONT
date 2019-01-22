@@ -21,7 +21,40 @@ a.links > span:hover{
    font-size: 15px !important;
 }
 
-.b-tabla{
+.boton-paginacion-anterior:enabled {
+    background-image: url(../img/boton/anterior-habilitado.svg);
+}
 
-    border-radius: 15px;
+.boton-paginacion-anterior:disabled {
+    background-image: url(../img/boton/anterior-deshabilitado.svg);
+}
+
+.boton-paginacion {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.boton-paginacion-siguiente:enabled {
+    background-image: url(../img/boton/siguiente-habilitado.svg);
+}
+
+.boton-paginacion-siguiente:disabled {
+    background-image: url(../img/boton/siguiente-deshabilitado.svg);
+}
+
+
+.boton-paginacion-primera:enabled {
+    background-image: url(../img/boton/primero-habilitado.svg);
+}
+
+.boton-paginacion-primera:disabled {
+    background-image: url(../img/boton/primero-deshabilitado.svg);
+}
+
+.boton-paginacion-ultima:enabled {
+    background-image: url(../img/boton/ultimo-habilitado.svg);
+}
+
+.boton-paginacion-ultima:disabled {
+    background-image: url(../img/boton/ultimo-deshabilitado.svg);
 }
