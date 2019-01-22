@@ -15,7 +15,7 @@ a.links > span:hover{
  color:black;
 }
 
-.uk-background-primary {
+.uk-background-primary .color {
    color: white !important;
    font-weight: bold !important;
    font-size: 15px !important;
