@@ -123,53 +123,53 @@
 
 
                                 <div class="uk-width-1-5@m uk-width-1-1@s ">
-                                    <label class="uk-form-label" for="cctv" >CCTV</label>
+                                    <label class="uk-form-label" for="cctv" >CCT</label>
                                     <input id="cctv" placeholder="21DBA0004C" disabled="disabled" type="text" class="uk-input">
                                 </div>
 
                                 <div class="uk-width-3-5@m uk-width-1-1@s" >
                                     <label class="uk-form-label" for="nombre-escuela" >Nombre</label>
-                                    <input id="nombre-escuela" placeholder="Nombre Escuela" disabled="disabled" type="text" class="uk-input">
+                                    <input id="nombre-escuela" placeholder="Francisco I Madero " disabled="disabled" type="text" class="uk-input">
                                 </div>
                                  <div class="uk-width-1-5@m uk-width-1-1@s">
-                                   <label class="uk-form-label" for="codigo-postal" >Codigo postal</label>
+                                   <label class="uk-form-label" for="codigo-postal" >Código postal</label>
                                    <input id="codigo-postal" placeholder="72730" disabled="disabled" type="text" class="uk-input">
                                  </div>
 
 
                                 <div class="uk-width-1-2@m uk-width-1-1@s">
                                     <label class="uk-form-label" for="colonia" >Colonia</label>
-                                    <input id="colonia" placeholder="Colonia" disabled="disabled" type="text" class="uk-input">
+                                    <input id="colonia" placeholder="Reforma" disabled="disabled" type="text" class="uk-input">
 
                                 </div>
                                 <div class="uk-width-1-2@m uk-width-1-1@s">
                                     <label class="uk-form-label" for="municipio" >Municipio</label>
-                                    <input id="municipio" placeholder="Municipio" disabled="disabled" type="text" class="uk-input">
+                                    <input id="municipio" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
                                 </div>
                                 <div class="uk-width-1-5@m uk-width-1-1@s">
                                     <label class="uk-form-label" for="estado" >Estado</label>
-                                    <input id="estado" placeholder="Baja California sur" disabled="disabled" type="text" class="uk-input">
+                                    <input id="estado" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
                                 </div>
 
                                 <div class="uk-width-3-5@m uk-width-1-1@s">
                                     <label class="uk-form-label" for="calle" >Calle</label>
-                                    <input id="calle" placeholder="Estado" disabled="disabled" type="text" class="uk-input">
+                                    <input id="calle" placeholder="Calle 4 Sur No. 311, Reforma Sur, 72170 Puebla, Pue. " disabled="disabled" type="text" class="uk-input">
                                 </div>
                                 <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="numero-exterior" >Numero Exterior</label>
-                                    <input id="numero-exterior" placeholder="Numero interior" disabled="disabled" type="text" class="uk-input">
+                                    <label class="uk-form-label" for="numero-exterior" >Número Exterior</label>
+                                    <input id="numero-exterior" placeholder="Número interior" disabled="disabled" type="text" class="uk-input">
                                 </div>
                                 <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="numero-interior" >Numero Interior</label>
-                                    <input id="numero-interior" placeholder="Numero exterior" disabled="disabled" type="text" class="uk-input">
+                                    <label class="uk-form-label" for="numero-interior" >Número Interior</label>
+                                    <input id="numero-interior" placeholder="Número exterior" disabled="disabled" type="text" class="uk-input">
                                 </div>
                                <div class="uk-width-1-5@m uk-width-1-1@s">
                                    <label class="uk-form-label" for="estado-bloqueo" >Estado de Bloqueo</label>
-                                    <input id="estado-bloqueo" placeholder="Sin tipo" disabled="disabled" type="text" class="uk-input">
+                                    <input id="estado-bloqueo" placeholder="Activo" disabled="disabled" type="text" class="uk-input">
                                </div>
                                 <div class="uk-width-1-5@m uk-width-1-1@s">
                                     <label class="uk-form-label" for="licencias" >Licencias</label>
-                                    <input id="licencias" placeholder="Sin licencias" disabled="disabled" type="text" class="uk-input">
+                                    <input id="licencias" placeholder="2" disabled="disabled" type="text" class="uk-input">
                                 </div>
 
 
@@ -186,40 +186,91 @@
                                 <tr class="uk-background-primary ">
                                     <th ><span class="letra-titulo">Nombre</span></th>
                                     <th ><span class="letra-titulo">Tipo</span></th>
-                                    <th><span class="letra-titulo">Telefono</span></th>
+                                    <th><span class="letra-titulo">Teléfono</span></th>
                                     <th><span class="letra-titulo">Opciones</span></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Sin tipo</td>
+                                    <td>Coordinador</td>
                                     <td>(222)2307383</td>
-                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                    <td class="uk-text-center ">
+                                        <div class=" boundary">
+                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                            <div uk-dropdown="mode: click; boundary: .boundary">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Sin tipo</td>
+                                    <td>Coordinador</td>
                                     <td>(222)2307383</td>
-                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                    <td class="uk-text-center ">
+                                        <div class=" boundary">
+                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                            <div uk-dropdown="mode: click; boundary: .boundary">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Sin tipo</td>
+                                    <td>Coordinador</td>
                                     <td>(222)2307383</td>
-                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                    <td class="uk-text-center ">
+                                        <div class=" boundary">
+                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                            <div uk-dropdown="mode: click; boundary: .boundary">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Sin tipo</td>
+                                    <td>Coordinador</td>
                                     <td>(222)2307383</td>
-                                    <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></span></td>
+                                    <td class="uk-text-center ">
+                                       <div class=" boundary">
+                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"  ></a>
+                                            <div uk-dropdown="mode: click; boundary: .boundary">
+                                                <ul class="uk-nav uk-dropdown-nav">
+                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
+
+                                                </ul>
+                                            </div>
+                                       </div>
+
+                                    </td>
                                 </tr>
                             </tbody>
 
 
                         </table>
+                        <div class="uk-flex uk-flex-right uk-margin-small-top "><button class="uk-button uk-button-primary uk-border-rounded"  uk-toggle="target: #modal-agregar-contacto" ><span uk-icon="icon: users"></span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
                     </div>
+
+
                     <div class="uk-width-auto@m uk-overflow-auto ">
 
                         <h3 class=" uk-text-center uk-heading-line"><span>Licencias</span></h3>
@@ -240,24 +291,13 @@
                                     <td >52</td>
                                 </tr>
 
-
-
                             </tbody>
-
-
                         </table>
-                        <div class="uk-flex uk-flex-center"><button class="uk-button uk-button-primary uk-border-rounded">Agregar</button></div>
+                        <div class="uk-flex uk-flex-right"><button class="uk-button uk-button-primary uk-border-rounded"><span class="uk-text-left " uk-icon="icon:  bookmark"></span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
 
 
                     </div>
                 </div>
-
-
-
-
-
-
-
             </div>
 
         </div>
@@ -308,6 +348,142 @@
 
     <!-- /OFFCANVAS -->
    </div>
+            <div id="modal-eliminar" uk-modal="">
+                <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+                    <div class="uk-modal-header fondo-peligro"  >
+                        <p class="uk-h4 uk-text-center uk-text-bold" ><span class="letra-titulo">Eliminar</span></p>
+                    </div>
+                    <div class="uk-modal-body">
+                        <p>Esta seguro que desea Borrar al contacto: <span class="uk-text-bold">Mauricio Garcia Gonzalez de la Rosa</span> </p>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>
+                        <button class="uk-button uk-button-danger uk-border-rounded" type="button">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-modificar" uk-modal="">
+                <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+                    <div class="uk-modal-header uk-background-secondary">
+                        <p class="uk-h4 uk-text-center uk-text-center"><span class="letra-titulo">Modificar Contacto</span></p>
+                    </div>
+                    <div class="uk-modal-body">
+                        <form>
+                            <div uk-grid="">
+
+
+                                <div class="uk-width-1-1">
+                                    <label class="uk-form-label" for="nombre" >Nombre</label>
+                                    <input id="nombre" placeholder="Mauricio Garcia Gonzalez de la Rosa" type="text" class="uk-input">
+                                </div>
+
+                                <div class="uk-width-1-3">
+                                    <label class="uk-form-label" for="tipo" >Tipo</label>
+                                    <select class="uk-select" id="tipo">
+                                        <option>coordinador</option>
+                                        <option>director</option>
+                                    </select>
+                                </div>
+
+                                <div class="uk-width-2-3">
+                                    <label class="uk-form-label" for="email" >Telefono</label>
+                                    <input id="email" placeholder="(222)2307383" type="text" class="uk-input">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>
+                        <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal-agregar-contacto" uk-modal="">
+                <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+                    <div class="uk-modal-header uk-background-secondary">
+                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Contacto</span></p>
+                    </div>
+                    <div class="uk-modal-body">
+                        <form>
+                            <div uk-grid="">
+
+
+                                <div class="uk-width-1-1">
+                                    <label class="uk-form-label" for="nombre-contaco" >Nombre</label>
+                                    <input id="nombre-contaco" placeholder="Nombre" type="text" class="uk-input">
+                                </div>
+
+                                <div class="uk-width-1-3">
+                                    <label class="uk-form-label" for="tipo-contacto" >Tipo</label>
+                                    <select class="uk-select" id="tipo-contacto">
+                                        <option>coordinador</option>
+                                        <option>director</option>
+                                    </select>
+                                </div>
+
+                                <div class="uk-width-2-3">
+                                    <label class="uk-form-label" for="telefono" >Telefono</label>
+                                    <input id="telefono" placeholder="(222)2307383" type="text" class="uk-input">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>
+                        <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+
+        <div id="modal-agregar-licencia" uk-modal="">
+                <div class="uk-modal-dialog uk-margin-auto-vertical">
+
+                    <div class="uk-modal-header uk-background-secondary">
+                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Contacto</span></p>
+                    </div>
+                    <div class="uk-modal-body">
+                        <form>
+                            <div uk-grid="">
+
+
+                                <div class="uk-width-1-1">
+                                    <label class="uk-form-label" for="nombre-contaco" >Nombre</label>
+                                    <input placeholder="Nombre" type="text" class="uk-input">
+                                </div>
+
+                                <div class="uk-width-1-3">
+                                    <label class="uk-form-label" for="tipo-contacto" >Tipo</label>
+                                    <select class="uk-select" >
+                                        <option>coordinador</option>
+                                        <option>director</option>
+                                    </select>
+                                </div>
+
+                                <div class="uk-width-2-3">
+                                    <label class="uk-form-label" for="telefono" >Telefono</label>
+                                    <input  placeholder="(222)2307383" type="text" class="uk-input">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>
+                        <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Aceptar</button>
+                    </div>
+                </div>
+        </div>
+
 
 <script src="../js/uikit.js" ></script>
 <script src="../js/uikit-icons.js" charset="utf-8"></script>
