@@ -83,7 +83,7 @@
                 <li class="uk-nav-header">dashboard</li>
 
                 <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                <li><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
                 <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
             </ul>
@@ -114,9 +114,9 @@
             <div class="uk-container-large ">
 
 
-                <h1 class="uk-heading-line uk-text-center "><span>Detalles de la Escuela</span></h1>
+                <h1 class="uk-heading-line uk-text-center uk-padding-small" ><span >Detalles de la Escuela</span></h1>
 
-                <h2 class="uk-text-center uk-margin-medium-top uk-background-primary"><span class="letra-titulo">Datos de la escuela</span></h2>
+                <h2 class="uk-text-center uk-margin-medium-top uk-background-primary uk-padding-small"><span class="letra-titulo">Datos de la escuela</span></h2>
 
                 <form class="">
                     <div  uk-grid="" >
@@ -199,9 +199,9 @@
                                         <div class=" boundary">
                                             <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
                                             <div uk-dropdown="mode: click; boundary: .boundary">
-                                                <ul class="uk-nav uk-dropdown-nav">
+                                                <ul class="uk-nav uk-dropdown-nav uk-text-left ">
                                                     <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
 
                                                 </ul>
                                             </div>
@@ -219,7 +219,7 @@
                                             <div uk-dropdown="mode: click; boundary: .boundary">
                                                 <ul class="uk-nav uk-dropdown-nav">
                                                     <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
 
                                                 </ul>
                                             </div>
@@ -231,18 +231,17 @@
                                     <td>Mauricio Garcia Gonzalez de la Rosa</td>
                                     <td>Coordinador</td>
                                     <td>(222)2307383</td>
-                                    <td class="uk-text-center ">
-                                        <div class=" boundary">
+                                    <td class="uk-text-center">
+                                        <div class="boundary">
                                             <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
                                             <div uk-dropdown="mode: click; boundary: .boundary">
                                                 <ul class="uk-nav uk-dropdown-nav">
                                                     <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold">Modificar</span></li>
+                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
 
                                                 </ul>
                                             </div>
                                         </div>
-
                                     </td>
                                 </tr>
                                 <tr>
@@ -267,7 +266,7 @@
 
 
                         </table>
-                        <div class="uk-flex uk-flex-right uk-margin-small-top "><button class="uk-button uk-button-primary uk-border-rounded"  uk-toggle="target: #modal-agregar-contacto" ><span uk-icon="icon: users"></span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
+                        <div class="uk-flex uk-flex-right uk-margin-small-top "><button class="uk-button uk-button-primary uk-border-rounded"  uk-toggle="target: #modal-agregar-contacto" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
                     </div>
 
 
@@ -293,7 +292,7 @@
 
                             </tbody>
                         </table>
-                        <div class="uk-flex uk-flex-right"><button class="uk-button uk-button-primary uk-border-rounded"><span class="uk-text-left " uk-icon="icon:  bookmark"></span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
+                        <div class="uk-flex uk-flex-right"><button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-agregar-licencia" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
 
 
                     </div>
@@ -348,7 +347,7 @@
 
     <!-- /OFFCANVAS -->
    </div>
-            <div id="modal-eliminar" uk-modal="">
+            <div id="modal-eliminar" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                     <div class="uk-modal-header fondo-peligro"  >
@@ -364,7 +363,7 @@
                 </div>
             </div>
 
-            <div id="modal-modificar" uk-modal="">
+            <div id="modal-modificar" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                     <div class="uk-modal-header uk-background-secondary">
@@ -397,14 +396,14 @@
 
                         </form>
                     </div>
-                    <div class="uk-modal-footer uk-text-right">
+                    <div class="uk-modal-footer uk-text-right" >
                         <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>
                         <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Aceptar</button>
                     </div>
                 </div>
             </div>
 
-            <div id="modal-agregar-contacto" uk-modal="">
+            <div id="modal-agregar-contacto" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                     <div class="uk-modal-header uk-background-secondary">
@@ -444,38 +443,14 @@
                 </div>
             </div>
 
-        <div id="modal-agregar-licencia" uk-modal="">
+        <div id="modal-agregar-licencia" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                     <div class="uk-modal-header uk-background-secondary">
-                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Contacto</span></p>
+                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Licencias</span></p>
                     </div>
                     <div class="uk-modal-body">
-                        <form>
-                            <div uk-grid="">
-
-
-                                <div class="uk-width-1-1">
-                                    <label class="uk-form-label" for="nombre-contaco" >Nombre</label>
-                                    <input placeholder="Nombre" type="text" class="uk-input">
-                                </div>
-
-                                <div class="uk-width-1-3">
-                                    <label class="uk-form-label" for="tipo-contacto" >Tipo</label>
-                                    <select class="uk-select" >
-                                        <option>coordinador</option>
-                                        <option>director</option>
-                                    </select>
-                                </div>
-
-                                <div class="uk-width-2-3">
-                                    <label class="uk-form-label" for="telefono" >Telefono</label>
-                                    <input  placeholder="(222)2307383" type="text" class="uk-input">
-                                </div>
-                            </div>
-
-
-                        </form>
+                        <p>Se agregara una licencia a la escuela a la escuela: <span>21DBA0004C</span></p>
                     </div>
                     <div class="uk-modal-footer uk-text-right">
                         <button class="uk-button uk-button-default uk-border-rounded uk-modal-close" type="button">Cancelar</button>

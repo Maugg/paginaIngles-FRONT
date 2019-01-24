@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="../css/uikit.css">
+    <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilo-navbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/letra.css">
+    <link rel="stylesheet" type="text/css" href="../css/tablas.css" >
+</head>
+<body class="">
+<div class="uk-offcanvas-content">
+    <header id="top-head" class="uk-position-fixed">
+        <div class="uk-container uk-container-expand uk-background-primary">
+            <!-- navbar de la pagina -->
+            <nav class="uk-navbar uk-light" data-uk-navbar="mode:click; duration: 250">
+
+
+                <div class="uk-navbar-left">
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <a class="uk-logo" href="#"><img class="custom-logo" src="img/white_escuadron.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="uk-navbar-center">
+
+
+
+                    <!-- ******************input de busqueda******************** -->
+                    <div class="uk-navbar-item  uk-visible@s ">
+                        <form action="dashboard.html" class="uk-search uk-search-default">
+                            <span data-uk-search-icon></span>
+                            <input class="uk-search-input search-field " type="search" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#" data-uk-icon="icon:user" title="Your profile" data-uk-tooltip></a></li>
+                        <li><a href="#" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a></li>
+                        <li><a href="#" data-uk-icon="icon:  sign-out" title="Sign Out" data-uk-tooltip></a></li>
+                        <li><a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" title="Offcanvas" data-uk-tooltip></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- fin navbar -->
+        </div>
+    </header>
+    <!-- menu del lado izquierdo -->
+    <aside id="left-col" class="uk-light uk-visible@m">
+        <div class="left-logo uk-flex uk-flex-middle">
+            <img class="custom-logo margen10" src="img/white_escuadron.svg" alt="">
+            <span class="lescuadron letra-logo ">scuadron</span>
+        </div>
+        <div class="left-content-box  content-box-dark">
+            <img src="../img/superadmin.svg" alt="" class="uk-border-circle profile-img " id="admin" uk-svg>
+            <h4 class="uk-text-center uk-margin-remove-vertical text-light">Noldi Vives</h4>
+            <div class="uk-position-relative uk-text-center uk-display-block">
+                <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center" data-uk-icon="icon: triangle-down; ratio: 0.7">Admin</a>
+                <!-- user dropdown -->
+                <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
+                    <ul class="uk-nav uk-dropdown-nav uk-text-left">
+                        <li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+                        <li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
+                        <li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+                    </ul>
+                </div>
+                <!-- /user dropdown -->
+            </div>
+        </div>
+
+        <div class="left-nav-wrap">
+            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+                <li class="uk-nav-header">dashboard</li>
+
+                <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
+                <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
+                <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
+            </ul>
+        </div>
+        <div class="bar-bottom">
+            <ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5" data-uk-grid>
+                <li>
+                    <a href="#" class="uk-icon-link" data-uk-icon="icon: home" title="Home" data-uk-tooltip></a>
+                </li>
+                <li>
+                    <a href="#" class="uk-icon-link" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a>
+                </li>
+                <li>
+                    <a href="#" class="uk-icon-link" data-uk-icon="icon: social"  title="Social" data-uk-tooltip></a>
+                </li>
+
+                <li>
+                    <a href="#" class="uk-icon-link" data-uk-tooltip="Sign out" data-uk-icon="icon: sign-out"></a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- fin menu lado izquierdo -->
+    <!-- CONTENT -->
+    <div id="content" data-uk-height-viewport="expand: true">
+        <div class="uk-container" >
+            <div class="uk-container-large">
+                <h1 class="uk-heading-line uk-text-center"><span>Catalogo</span></h1>
+
+                       <div class="" uk-grid="">
+
+                           <div class="uk-width-1-2@m " >
+
+                               <div uk-grid="">
+                                    <div  class="uk-width-auto " ><span uk-icon="icon: ban; ratio: 2" class="uk-icon uk-margin-small-right"></span></div>
+                                        <div class="uk-width-expand">
+                                           <h3 class="uk-text-center uk-heading-line "><span class="">Motivo de bloqueo</span></h3>
+                                           <table class="uk-table uk-table-small  uk-table-divider uk-table-hover uk-table-middle uk-text-center">
+                                               <thead class="uk-background-primary">
+                                               <tr>
+                                                   <th class="uk-text-center"><span class="letra-titulo">Descripcion</span></th>
+                                                   <th class="uk-text-center"><span class="letra-titulo">Opciones</span></th>
+                                               </tr>
+                                               </thead>
+                                               <tbody>
+                                               <tr>
+                                                   <td>Falta de pago</td>
+                                                   <td>
+                                                       <div class=" boundary">
+                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                           <div uk-dropdown="mode: click; boundary: .boundary">
+                                                               <ul class="uk-nav uk-dropdown-nav">
+                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </td>
+
+                                               </tr>
+
+                                               <tr>
+                                                   <td>Cambio de razon social</td>
+                                                   <td>
+                                                       <div class=" boundary">
+                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                           <div uk-dropdown="mode: click; boundary: .boundary">
+                                                               <ul class="uk-nav uk-dropdown-nav">
+                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </td>
+
+                                               </tr>
+
+                                               <tr>
+                                                   <td>Razon 3</td>
+                                                   <td>
+                                                       <div class=" boundary">
+                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                           <div uk-dropdown="mode: click; boundary: .boundary">
+                                                               <ul class="uk-nav uk-dropdown-nav">
+                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </td>
+
+                                               </tr>
+
+
+                                               <tr>
+                                                   <td>Razon 4</td>
+                                                   <td>
+                                                       <div class=" boundary">
+                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                           <div uk-dropdown="mode: click; boundary: .boundary">
+                                                               <ul class="uk-nav uk-dropdown-nav">
+                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </td>
+
+                                               </tr>
+
+
+                                               <tr>
+                                                   <td>Razon 5</td>
+                                                   <td>
+                                                       <div class=" boundary">
+                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                           <div uk-dropdown="mode: click; boundary: .boundary">
+                                                               <ul class="uk-nav uk-dropdown-nav">
+                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                               </ul>
+                                                           </div>
+                                                       </div>
+                                                   </td>
+
+                                               </tr>
+                                               </tbody>
+                                               <tfoot>
+                                               <tr>
+                                                   <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                               </tr>
+                                               </tfoot>
+                                           </table>
+                                        </div>
+                               </div>
+
+                               <div class="uk-margin" uk-grid>
+
+                                   <div  class="uk-width-auto " ><span uk-icon="icon: ban; ratio: 2" class="uk-icon uk-margin-small-right uk-invisible"></span></div>
+
+                                   <div class="uk-panel uk-flex uk-flex-between uk-width-auto">
+                                       <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
+                                       <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
+
+                                       <div class="uk-width-1-1@s uk-width-1-4@m">
+                                           <select class="uk-select">
+                                               <option>5</option>
+                                               <option>10</option>
+                                               <option>15</option>
+                                               <option>20</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-expand">
+                                       <button class="uk-button uk-button-primary uk-border-rounded" >
+
+                                           <span uk-icon="icon: plus-circle"></span>
+                                           <div id="my-id" class="uk-flex-top" uk-modal>
+                                               <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
+                                           </div>
+                                       </button>
+                                   </div>
+                               </div>
+
+                           </div>
+
+                           <div class="uk-width-1-2@m " >
+
+                               <div uk-grid="">
+                                   <div  class="uk-width-auto " ><span uk-icon="icon: users; ratio: 2" class="uk-icon uk-margin-small-right"></span></div>
+                                   <div class="uk-width-expand">
+                                       <h3 class=" uk-text-center uk-heading-line "><span class="">Tipo de contacto</span></h3>
+                                       <table class="uk-table uk-table-small  uk-table-divider uk-table-hover uk-table-middle uk-text-center  ">
+                                           <thead class="uk-background-primary ">
+                                           <tr class="">
+                                               <th class="uk-text-center"><span class="letra-titulo  ">Descripcion</span></th>
+                                               <th class="uk-text-center"><span class="letra-titulo ">Opciones</span></th>
+                                           </tr>
+                                           </thead>
+                                           <tbody>
+                                           <tr>
+                                               <td>Coordinador</td>
+                                               <td>
+                                                   <div class=" boundary">
+                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div uk-dropdown="mode: click; boundary: .boundary">
+                                                           <ul class="uk-nav uk-dropdown-nav">
+                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </td>
+
+                                           </tr>
+
+                                           <tr>
+                                               <td>Director</td>
+                                               <td>
+                                                   <div class=" boundary">
+                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div uk-dropdown="mode: click; boundary: .boundary">
+                                                           <ul class="uk-nav uk-dropdown-nav">
+                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </td>
+
+                                           </tr>
+
+                                           <tr>
+                                               <td>Tipo 3</td>
+                                               <td>
+                                                   <div class=" boundary">
+                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div uk-dropdown="mode: click; boundary: .boundary">
+                                                           <ul class="uk-nav uk-dropdown-nav">
+                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </td>
+
+                                           </tr>
+
+
+                                           <tr>
+                                               <td>Tipo 4</td>
+                                               <td>
+                                                   <div class=" boundary">
+                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div uk-dropdown="mode: click; boundary: .boundary">
+                                                           <ul class="uk-nav uk-dropdown-nav">
+                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </td>
+
+                                           </tr>
+
+
+                                           <tr>
+                                               <td>Tipo 5</td>
+                                               <td>
+                                                   <div class=" boundary">
+                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div uk-dropdown="mode: click; boundary: .boundary">
+                                                           <ul class="uk-nav uk-dropdown-nav">
+                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
+                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                               </td>
+
+                                           </tr>
+                                           </tbody>
+                                           <tfoot>
+                                           <tr>
+                                               <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                           </tr>
+                                           </tfoot>
+                                       </table>
+
+                                   </div>
+
+                               </div>
+
+                               <div class="uk-margin" uk-grid>
+
+                                   <div  class="uk-width-auto " ><span uk-icon="icon: ban; ratio: 2" class="uk-icon uk-margin-small-right uk-invisible"></span></div>
+
+                                   <div class="uk-panel uk-flex uk-flex-between uk-width-auto">
+                                       <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
+                                       <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
+
+                                       <div class="uk-width-1-1@s uk-width-1-4@m">
+                                           <select class="uk-select">
+                                               <option>5</option>
+                                               <option>10</option>
+                                               <option>15</option>
+                                               <option>20</option>
+                                           </select>
+                                       </div>
+                                   </div>
+                                   <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-expand">
+                                       <button class="uk-button uk-button-primary uk-border-rounded" >
+
+                                           <span uk-icon="icon: plus-circle"></span>
+                                           <div id="my-id" class="uk-flex-top" uk-modal>
+                                               <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
+                                           </div>
+                                       </button>
+                                   </div>
+                               </div>
+
+
+                           </div>
+
+
+                       </div>
+
+
+
+
+            </div>
+
+            <!--  CONTENIDO  -->
+
+        </div>
+    </div>    <!-- OFFCANVAS  -->
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+        <div class=" uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+            <button class="uk-offcanvas-close uk-close uk-icon " type="button" data-uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <!-- <li class="uk-active"><a href="#">Active</a></li>
+                <li class="uk-parent">
+                  <a href="#">Parent</a>
+                  <ul class="uk-nav-sub">
+                    <li><a href="#">Sub item</a></li>
+                    <li><a href="#">Sub item</a></li>
+                  </ul>
+                </li> -->
+                <li class="uk-nav-header">dashboard</li>
+                <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span>Lista de Escuelas</a></li>
+                <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: comments"></span> Item</a></li>
+                <li class="uk-nav-divider"></li>
+                <!-- <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li> -->
+                <div class="left-content-box uk-margin-top">
+
+                    <h5>Daily Reports</h5>
+                    <div>
+                        <span class="uk-text-small">Escuelas Proximas a caducar <small>(+50)</small></span>
+                        <progress class="uk-progress" value="50" max="100"></progress>
+                    </div>
+                    <div>
+                        <span class="uk-text-small">Total de licencias vendidas <small>(+78)</small></span>
+                        <progress class="uk-progress success" value="78" max="100"></progress>
+                    </div>
+                    <!-- <div>
+                      <span class="uk-text-small">Feedback <small>(-12)</small></span>
+                      <progress class="uk-progress warning" value="12" max="100"></progress>
+                    </div> -->
+
+                </div>
+            </ul>
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    <!-- /OFFCANVAS -->
+</div>
+
+<script src="../js/uikit.js" ></script>
+<script src="../js/uikit-icons.js" charset="utf-8"></script>
+
+
+</body>
+</html>
