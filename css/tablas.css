@@ -20,6 +20,11 @@ a.links > span:hover{
    font-weight: bold !important;
    font-size: 15px !important;
 }
+.uk-background-secondary .titulo-blanco-tabla {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+}
 
 
 
