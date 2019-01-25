@@ -204,7 +204,113 @@
                         </button>
                     </div>
                 </div>
+                <div id="modal-busqueda-nombre" class="uk-flex-top" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Búsqueda por Nombre</h2>
+                        </div>
+
+                        <form>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Búsqueda por nombre de Escuela">
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div id="modal-busqueda-cct" class="uk-flex-top" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title">Búsqueda por CCT</h2>
+                        </div>
+                        <form>
+                            <div class="uk-margin">
+                                <input class="uk-input" type="text" placeholder="Búsqueda por CCT">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="modal-escuela" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <div class="uk-modal-header uk-background-secondary">
+                           <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Escuela</span></p>
+                        </div>
+                        <div class="uk-modal-body">
+                            <form>
+                                <div uk-grid="">
+                                <div class="uk-width-1-1@s uk-width-1-6@m">
+                                    <label class="uk-form-label" for="input-cct">CCT</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-cct" type="text" placeholder="Escribe la CCT">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-1-2@m">
+                                    <label class="uk-form-label" for="input-nombre">Nombre</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-nombre" type="text" placeholder="Escribe el nombre de Escuela">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-1-6@m">
+                                    <label class="uk-form-label" for="input-codigo-postal">Código Postal</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-codigo-postal" type="text" placeholder="Escribe el C.P.">
+                                    </div>
+                                </div>
+                                <div class="uk-inline uk-width-1-1@s uk-width-1-6@m ">
+                                    <button class="uk-button uk-button-secondary uk-border-rounded uk-position-bottom-center">Buscar</button>
+                                </div>
+                                <div class="uk-inline uk-width-1-1@s uk-width-1-2@m">
+                                    <!--<label class="uk-form-label" for="input-colonia">Colonia</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-colonia" type="text" placeholder="Escribe la Colonia">
+                                    </div>-->
+                                    <select class="uk-select  uk-position-bottom-center ">
+                                         <option>San Lucas Atoyatenco(Los Ranchitos) DE la Virgen de Guadalupe</option>
+                                         <option>San Martín de Labastida </option>
+                                     </select>
+                                 </div>
+                                <div class="uk-width-1-1@s uk-width-1-2@m">
+                                    <label class="uk-form-label" for="input-calle">Calle</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-calle" type="text" placeholder="Escribe la Calle">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-1-6@m">
+                                    <label class="uk-form-label" for="input-numero-ext">Número Ext.</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-numero-ext" type="text" placeholder="Escribe el Núm.Ext">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-1-6@m">
+                                    <label class="uk-form-label" for="input-numero-int">Número Int.</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-numero-int" type="text" placeholder="Escribe el Núm.Int">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-2-5@m">
+                                    <label class="uk-form-label" for="input-municipio">Municipio</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-municipio" type="text" placeholder="Escribe el Municipio">
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1@s uk-width-1-4@m">
+                                    <label class="uk-form-label" for="input-estado">Estado</label>
+                                    <div class="uk-form-controls">
+                                        <input class="uk-input" id="input-estado" type="text" placeholder="Escribe el Estado">
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-modal-footer uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close uk-border-rounded" type="button">Cancelar</button>
+                            <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Guardar</button>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -237,113 +343,7 @@
     </div>
     <!-- /OFFCANVAS -->
 </div>
-<div id="modal-busqueda-nombre" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Búsqueda por Nombre</h2>
-        </div>
-
-        <form>
-            <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="Búsqueda por nombre de Escuela">
-            </div>
-        </form>
-
-    </div>
-</div>
-<div id="modal-busqueda-cct" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <div class="uk-modal-header">
-            <h2 class="uk-modal-title">Búsqueda por CCT</h2>
-        </div>
-        <form>
-            <div class="uk-margin">
-                <input class="uk-input" type="text" placeholder="Búsqueda por CCT">
-            </div>
-        </form>
-    </div>
-</div>
-<div id="modal-escuela" class="uk-modal-container" uk-modal>
-    <div class="uk-modal-dialog uk-margin-auto-vertical">
-        <div class="uk-modal-header uk-background-secondary">
-            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Escuela</span></p>
-        </div>
-        <div class="uk-modal-body">
-            <form>
-                <div uk-grid="">
-                    <div class="uk-width-1-1@s uk-width-1-6@m">
-                        <label class="uk-form-label" for="input-cct">CCT</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-cct" type="text" placeholder="Escribe la CCT">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-2@m">
-                        <label class="uk-form-label" for="input-nombre">Nombre</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-nombre" type="text" placeholder="Escribe el nombre de Escuela">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-6@m">
-                        <label class="uk-form-label" for="input-codigo-postal">Código Postal</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-codigo-postal" type="text" placeholder="Escribe el C.P.">
-                        </div>
-                    </div>
-                    <div class="uk-inline uk-width-1-1@s uk-width-1-6@m ">
-                        <button class="uk-button uk-button-secondary uk-border-rounded uk-position-bottom-center">Buscar</button>
-                    </div>
-                    <div class="uk-inline uk-width-1-1@s uk-width-1-2@m">
-                        <!--<label class="uk-form-label" for="input-colonia">Colonia</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-colonia" type="text" placeholder="Escribe la Colonia">
-                        </div>-->
-                        <select class="uk-select  uk-position-bottom-center ">
-                            <option>San Lucas Atoyatenco(Los Ranchitos) DE la Virgen de Guadalupe</option>
-                            <option>San Martín de Labastida </option>
-                        </select>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-2@m">
-                        <label class="uk-form-label" for="input-calle">Calle</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-calle" type="text" placeholder="Escribe la Calle">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-6@m">
-                        <label class="uk-form-label" for="input-numero-ext">Número Ext.</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-numero-ext" type="text" placeholder="Escribe el Núm.Ext">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-6@m">
-                        <label class="uk-form-label" for="input-numero-int">Número Int.</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-numero-int" type="text" placeholder="Escribe el Núm.Int">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-2-5@m">
-                        <label class="uk-form-label" for="input-municipio">Municipio</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-municipio" type="text" placeholder="Escribe el Municipio">
-                        </div>
-                    </div>
-                    <div class="uk-width-1-1@s uk-width-1-4@m">
-                        <label class="uk-form-label" for="input-estado">Estado</label>
-                        <div class="uk-form-controls">
-                            <input class="uk-input" id="input-estado" type="text" placeholder="Escribe el Estado">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div class="uk-modal-footer uk-text-right">
-            <button class="uk-button uk-button-default uk-modal-close uk-border-rounded" type="button">Cancelar</button>
-            <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Guardar</button>
-        </div>
-    </div>
-</div>
 <script src="../js/uikit.js" ></script>
 <script src="../js/uikit-icons.js" charset="utf-8"></script>
 
