@@ -87,6 +87,8 @@
                 <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
                 <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
+                <li><a href="Deshboard.html"><img  class="uk-icon-image" src="../img/maestro.svg  "></img> &nbsp; Profesores</a></li>
+                <li><a href="Detalle-grupos.html"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Grupos</a></li>
             </ul>
         </div>
         <div class="bar-bottom">
@@ -114,7 +116,8 @@
     <div id="content" data-uk-height-viewport="expand: true">
         <div id="content0" data-uk-height-viewport="expand: true">
             <div class="uk-container uk-container-expand">
-                <div class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl" data-uk-grid="">
+                <h1 class="uk-heading-line uk-text-center uk-padding-small"><span>Administracion de Profesores</span></h1>
+                <div class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl uk-margin uk-text-center" data-uk-grid="">
                     <div>
                         <span class="uk-text-small"><span data-uk-icon="icon:users" class="uk-margin-small-right uk-text-primary"></span>New Users</span>
                         <h1 class="uk-heading-primary uk-margin-remove  uk-text-primary">2.134</h1>
@@ -165,35 +168,37 @@
 
                         <!-- Contenido -->
 
-                        <h1 class="uk-heading-line uk-text-center"><span>Administracion de Profesores</span></h1>
-                        <div class="uk-overflow-auto"><table id="tabla-escuela" class="limite uk-table uk-table-middle uk-table-hover uk-table-striped ">
+
+                        <div class="uk-overflow-auto">
+                            <table id="tabla-escuela" class="limite uk-table uk-table-middle uk-table-hover uk-table-striped uk-margin-small-top">
 
                             <thead>
                             <tr>
-                                <th class="uk-background-primary uk-dark" scope="col"><span class="titulo-blanco">Nombre Profesor</span></th>
-                                <th class="uk-background-primary uk-dark" scope="col"><span class="titulo-blanco">No. de Grupos</span></th>
-                                <th class="uk-background-primary uk-dark" scope="col"><span class="titulo-blanco">Tareas Asignadas</span></th>
-                                <th class="uk-background-primary uk-dark" scope="col"><span class="titulo-blanco">Tareas por Asignar</span></th>
-                                <th class="uk-background-primary uk-dark" scope="col"><span class="titulo-blanco">Opciones</span></th>
-                                <th class="uk-background-primary uk-dark" scope="col"></th>
+
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="titulo-blanco ">Nombre Profesor</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="titulo-blanco">No. de Grupos</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="titulo-blanco">Tareas Asignadas</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="titulo-blanco">Tareas por Asignar</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="titulo-blanco">Opciones</span></th>
+
                             </tr>
 
                             </thead>
 
-                            <tbody>
+                            <tbody class="uk-text-center">
 
                             <tr>
-                                <td><span class="uk-text-middle">Benito Juarez</span></td>
+                                <td><span class="uk-text-center">Benito Juarez</span></td>
                                 <td><span class="uk-text-middle">10</span></td>
                                 <td><span class="uk-text-middle">8</span></td>
                                 <td><span class="uk-text-middle">1</span></td>
                                 <td>
-                                    <div class=" boundary">
-                                        <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                    <div class="boundary ">
+                                        <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                         <div uk-dropdown="mode: click; boundary: .boundary">
-                                            <ul class="uk-nav uk-dropdown-nav">
+                                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
                                                 <label>
-                                                    <li><a href="#">
+                                                    <li><a  href="Detalle-Profesor.html">
                                                         <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
                                                         <span class="uk-text-middle">detalle</span></a>
                                                     </li>
@@ -246,7 +251,7 @@
                             </tr>
 
 
-                            <tr>
+                            <tr class="">
                                 <td><span class="uk-text-middle">Benito Juarez</span></td>
                                 <td><span class="uk-text-middle">10</span></td>
                                 <td><span class="uk-text-middle">8</span></td>
@@ -255,7 +260,7 @@
                                     <div class=" boundary">
                                         <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
                                         <div uk-dropdown="mode: click; boundary: .boundary">
-                                            <ul class="uk-nav uk-dropdown-nav">
+                                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
                                                 <label>
                                                     <li><a href="#">
                                                         <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
@@ -307,174 +312,45 @@
                             </tr>
 
                             </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="5" class="uk-background-primary"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                            </tr>
+                            </tfoot>
 
                         </table>
 
-                            <div class="uk-flex uk-flex-right uk-margin">
-                                <button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-nuevo-profesor"><span class="uk-text-left uk-icon" uk-icon="icon: plus-circle">AGREGAR &nbsp</span></button>
-                                <span>&nbsp</span>
-                                <button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-csv">&nbsp &nbsp CSV &nbsp &nbsp </button>
-                            </div>
 
 
-
-                            <div id="modal-center" class="uk-modal-container" uk-modal>
-                                <div class="uk-modal-dialog uk-margin-auto-vertical">
-                                    <button class="uk-modal-close-default" type="button" uk-close></button>
-                                    <div class="uk-modal-header uk-background-secondary">
-                                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo"></span></p>
-                                    </div>
-                                    <div class="uk-modal-body">
-
-                                    </div>
-                                    <div class="uk-modal-footer uk-text-right">
-                                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                                        <button class="uk-button uk-button-primary" type="button">Save</button>
+                            <div class="uk-margin" uk-grid>
+                                <div class="uk-panel uk-flex uk-flex-left uk-width-1-1@s uk-width-1-2@m">
+                                    <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-primera"><span>&nbsp;</span></button>
+                                    <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
+                                    <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
+                                    <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-ultima"><span>&nbsp;</span></button>
+                                    <div class="uk-width-1-1@s uk-width-1-4@m">
+                                        <select class="uk-select">
+                                            <option>5</option>
+                                            <option>10</option>
+                                            <option>15</option>
+                                            <option>20</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-1-1@s uk-width-1-2@m">
 
-                            <div id="modal-bloqueo" uk-modal="" class="uk-modal">
-                                <div class="uk-modal-dialog">
-                                    <div class="uk-modal-header">
-                                        <h3 class="uk-modal-title uk-text-capitalize uk-text-center"><label>motivo de bloqueo</label></h3>
-                                    </div>
-                                    <div class="uk-modal-body">motivo de bloqueo</label>
-                                        <div class="uk-form-controls">Cambio razón social</option>
-                                            <option value="-32766">Falta de pago</option>
-                                            <option value="-32752">Motivo Bloque 5</option>
-                                            <option value="-32756">Motivo Bloqueo 1</option>
-                                            <option value="-32755">Motivo Bloqueo 2</option>
-                                            <option value="-32754">Motivo Bloqueo 3</option>
-                                            <option value="-32753">Motivo Bloqueo 4</option>
-                                            <option value="-32764">Rango de edades</option>
-                                            <option value="-32751">Ventas</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="uk-modal-footer uk-flex uk-flex-right">
-                                        <button class="uk-border-rounded uk-button uk-button-default uk-modal-close" type="button">cancelar</button>
-                                        <form >
-                                            <input name="tabla-escuela">
-                                            <input id="tabla-escuela:0:formulario-bloquear:aceptar" name="tabla-escuela:0:formulario-bloquear:aceptar" value="aceptar" class="uk-modal-close uk-button uk-button-primary uk-border-rounded uk-margin-left" >
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="modal-reporte" uk-modal="" class="uk-modal">
-                                <div class="uk-modal-dialog">
-                                    <div class="uk-modal-header">
-                                        <h3 class="uk-modal-title uk-text-capitalize uk-text-center"><label>Descarga Resportes</label></h3>
-                                    </div>
-                                    <div class="uk-modal-body">Descarga de Reportes</label>
-                                        <div class="uk-form-controls">Cambio razón social</option>
-                                            <option value="-32766">Falta de pago</option>
-                                            <option value="-32752">Motivo Bloque 5</option>
-                                            <option value="-32756">Motivo Bloqueo 1</option>
-                                            <option value="-32755">Motivo Bloqueo 2</option>
-                                            <option value="-32754">Motivo Bloqueo 3</option>
-                                            <option value="-32753">Motivo Bloqueo 4</option>
-                                            <option value="-32764">Rango de edades</option>
-                                            <option value="-32751">Ventas</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="uk-modal-footer uk-flex uk-flex-right">
-                                        <button class="uk-border-rounded uk-button uk-button-default uk-modal-close" type="button">cancelar</button>
-                                        <form >
-                                            <input name="tabla-escuela">
-                                            <input  value="aceptar" class="uk-modal-close uk-button uk-button-primary uk-border-rounded uk-margin-left" >
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="modal-nuevo-profesor" class="uk-modal-container" uk-modal>
-                                <div class="uk-modal-dialog uk-margin-auto-vertical">
-                                    <div class="uk-modal-header uk-background-secondary">
-                                        <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Nuevo Profesor</span></p>
-                                    </div>
-                                    <div class="uk-modal-body">
-                                        <h1 class="uk-modal-title uk-text-left">Registro Manual</h1>
-                                        <div class="uk-grid-small uk-grid" uk-grid="">
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nick Name</label>
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="nick" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nombre</label>
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="nombre" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Paterno</label>
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="a. paterno" type="text">
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Materno</label>
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="a. materno" type="text">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Correo Electronico</label>
-
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="correo-electronico" type="text">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Contraseña</label>
-                                                <div  class="uk-form-controls"><input  class="uk-input" placeholder="contraseña" type="password " id="Mypass">
-
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">&nbsp</label>
-
-
-                                                <div  class="uk-form-controls">
-                                                    <a onclick="verPassword()"><img class="uk-icon-image" src="../img/ojo.svg"></a>
-                                                </div>
-                                            </div>
-                                            <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column"><label class="uk-text-capitalize uk-form-label">Grado</label>
-                                                <div class="uk-form-controls"><select id="formulario-agregar-contacto:seleccion-tipo-contacto" name="formulario-agregar-contacto:seleccion-tipo-contacto" class="uk-select">	<option value="">seleccione una opción</option>
-                                                    <option value="-32764">1°</option>
-                                                    <option value="-32765">2°</option>
-                                                    <option value="-32767">3°</option>
-                                                    <option value="-32763">4°</option>
-                                                    <option value="-32762">5°</option>
-                                                    <option value="-32761">6°</option>
-                                                </select>
-                                                </div>
-                                            </div>
-
-                                            <div class= "uk-width-1-1@s uk-width-1-5@m uk-first-column">Grupo</label>
-
-                                                <div class="uk-form-controls"><input  class="uk-input" placeholder="A-Z" type="text">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- ARCHIVO CSV -->
-
-                                        <!--  CONTENIDO  -->
-
-                                    </div>
-                                    <div class="uk-modal-footer uk-text-right">
-                                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
-                                        <button class="uk-button uk-button-secondary" type="button">Guardar</button>
-                                    </div>
+                                    <button class="uk-button uk-button-primary " uk-toggle="target: #modal-nuevo-profesor"><span class="uk-text-left uk-icon" uk-icon="icon: plus-circle">AGREGAR &nbsp</span></button>
+                                        <span>&nbsp</span>
+                                    <button class="uk-button uk-button-primary " uk-toggle="target: #modal-csv"><span class="uk-text-left uk-icon" uk-icon="icon: file-text "> &nbsp &nbsp &nbsp CSV &nbsp &nbsp &nbsp</span></button>
                                 </div>
                             </div>
 
 
-                            <footer class="uk-section uk-section-small uk-text-center">
-                                <hr/>
-                                <p class="uk-text-small uk-text-center">Copyright 2019 - <a href="#">Created by Nah Technology</a> | Built with <span data-uk-icon="uikit"></span></a> </p>
-                            </footer>
+
+
+
+
+
                             <!--  CONTENIDO  -->
 
                         </div>
@@ -483,81 +359,308 @@
                 </div>
             </div>
 
-
-        </div>
-        <script src="../js/uikit.js" ></script>
-        <script src="../js/uikit-icons.js" charset="utf-8"></script>
-        <script src="../js/login.js" ></script>
-        <script src="../js/upfile.js" ></script>
-        <script>
-
-            var bar = document.getElementById('js-progressbar');
-
-            UIkit.upload('.js-upload', {
-
-                url: '',
-                multiple: true,
-
-                beforeSend: function (environment) {
-                    console.log('beforeSend', arguments);
-
-                    // The environment object can still be modified here.
-                    // var {data, method, headers, xhr, responseType} = environment;
-
-                },
-                beforeAll: function () {
-                    console.log('beforeAll', arguments);
-                },
-                load: function () {
-                    console.log('load', arguments);
-                },
-                error: function () {
-                    console.log('error', arguments);
-                },
-                complete: function () {
-                    console.log('complete', arguments);
-                },
-
-                loadStart: function (e) {
-                    console.log('loadStart', arguments);
-
-                    bar.removeAttribute('hidden');
-                    bar.max = e.total;
-                    bar.value = e.loaded;
-                },
-
-                progress: function (e) {
-                    console.log('progress', arguments);
-
-                    bar.max = e.total;
-                    bar.value = e.loaded;
-                },
-
-                loadEnd: function (e) {
-                    console.log('loadEnd', arguments);
-
-                    bar.max = e.total;
-                    bar.value = e.loaded;
-                },
-
-                completeAll: function () {
-                    console.log('completeAll', arguments);
-
-                    setTimeout(function () {
-                        bar.setAttribute('hidden', 'hidden');
-                    }, 1000);
-
-                    alert('Upload Completed');
-                }
-
-            });
-
-        </script>
-
-
-
-
     </div>
 </div>
+
+<div id="modal-csv" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Subir Archivo CSV</span></p>
+        </div>
+        <div class="uk-modal-body">
+
+            <div class="uk-width-1-1@s  uk-grid-margin uk-first-column">
+
+                <div class="js-upload uk-placeholder uk-text-center">
+                    <span uk-icon="icon: cloud-upload"></span>
+                    <span class="uk-text-middle">Archivo CSV</span>
+                    <div uk-form-custom>
+                        <input type="file" multiple>
+                        <span class="uk-link">Selecciona Uno</span>
+                    </div>
+                </div>
+
+                <progress id="js-progressbar" class="uk-progress" value="0" max="100" hidden></progress>
+
+            </div>
+
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+            <button class="uk-button uk-button-secondary" type="button">Save</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-bloqueo" uk-modal="" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-header">
+            <h3 class="uk-modal-title uk-text-capitalize uk-text-center"><label>motivo de bloqueo</label></h3>
+        </div>
+        <div class="uk-modal-body">motivo de bloqueo</label>
+            <div class="uk-form-controls">Cambio razón social</option>
+                <option value="-32766">Falta de pago</option>
+                <option value="-32752">Motivo Bloque 5</option>
+                <option value="-32756">Motivo Bloqueo 1</option>
+                <option value="-32755">Motivo Bloqueo 2</option>
+                <option value="-32754">Motivo Bloqueo 3</option>
+                <option value="-32753">Motivo Bloqueo 4</option>
+                <option value="-32764">Rango de edades</option>
+                <option value="-32751">Ventas</option>
+                </select>
+            </div>
+        </div>
+        <div class="uk-modal-footer uk-flex uk-flex-right">
+            <button class="uk-border-rounded uk-button uk-button-default uk-modal-close" type="button">cancelar</button>
+            <form >
+                <input name="tabla-escuela">
+                <input id="tabla-escuela:0:formulario-bloquear:aceptar" name="tabla-escuela:0:formulario-bloquear:aceptar" value="aceptar" class="uk-modal-close uk-button uk-button-primary uk-border-rounded uk-margin-left" >
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-reporte" uk-modal="" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <div class="uk-modal-header">
+            <h3 class="uk-modal-title uk-text-capitalize uk-text-center"><label>Descarga Resportes</label></h3>
+        </div>
+        <div class="uk-modal-body">Descarga de Reportes</label>
+            <div class="uk-form-controls">Cambio razón social</option>
+                <option value="-32766">Falta de pago</option>
+                <option value="-32752">Motivo Bloque 5</option>
+                <option value="-32756">Motivo Bloqueo 1</option>
+                <option value="-32755">Motivo Bloqueo 2</option>
+                <option value="-32754">Motivo Bloqueo 3</option>
+                <option value="-32753">Motivo Bloqueo 4</option>
+                <option value="-32764">Rango de edades</option>
+                <option value="-32751">Ventas</option>
+                </select>
+            </div>
+        </div>
+        <div class="uk-modal-footer uk-flex uk-flex-right">
+            <button class="uk-border-rounded uk-button uk-button-default uk-modal-close" type="button">cancelar</button>
+            <form >
+                <input name="tabla-escuela">
+                <input  value="aceptar" class="uk-modal-close uk-button uk-button-primary uk-border-rounded uk-margin-left" >
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="modal-nuevo-profesor" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Nuevo Profesor</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Registro Manual</h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nick Name</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="nick" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nombre</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="nombre" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Paterno</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="a. paterno" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Materno</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="a. materno" type="text">
+                    </div>
+                </div>
+
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Correo Electronico</label>
+
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="correo-electronico" type="text">
+                    </div>
+                </div>
+
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Contraseña</label>
+                    <div  class="uk-form-controls"><input  class="uk-input" placeholder="contraseña" type="password " id="Mypass">
+
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">&nbsp</label>
+
+
+                    <div  class="uk-form-controls">
+                        <a onclick="verPassword()"><img class="uk-icon-image" src="../img/ojo.svg"></a>
+                    </div>
+                </div>
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column"><label class="uk-text-capitalize uk-form-label">Grado</label>
+                    <div class="uk-form-controls"><select id="formulario-agregar-contacto:seleccion-tipo-contacto" name="formulario-agregar-contacto:seleccion-tipo-contacto" class="uk-select">	<option value="">seleccione una opción</option>
+                        <option value="-32764">1°</option>
+                        <option value="-32765">2°</option>
+                        <option value="-32767">3°</option>
+                        <option value="-32763">4°</option>
+                        <option value="-32762">5°</option>
+                        <option value="-32761">6°</option>
+                    </select>
+                    </div>
+                </div>
+
+                <div class= "uk-width-1-1@s uk-width-1-5@m uk-first-column">Grupo</label>
+
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="A-Z" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+<div id="modal-editar-profesor" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Nombre de Profesor</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Editar </h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nick Name</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="nick" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nombre</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="nombre" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Paterno</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="a. paterno" type="text">
+                    </div>
+                </div>
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Apellido Materno</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="a. materno" type="text">
+                    </div>
+                </div>
+
+
+                <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Correo Electronico</label>
+
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="correo-electronico" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-eliminar" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header fondo-peligro">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo"> Eliminar Profesor</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <p>¿Está seguro en borrar la escuela Benito Juarez?, no se prodrá recuperar los datos
+            </p>
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button fondo-peligro" type="button"><span class="letra-titulo">Eliminar</span></button>
+        </div>
+    </div>
+</div>
+</div>
+<script src="../js/uikit.js" ></script>
+<script src="../js/uikit-icons.js" charset="utf-8"></script>
+<script src="../js/login.js" ></script>
+<script src="../js/upfile.js" ></script>
+<script>
+
+    var bar = document.getElementById('js-progressbar');
+
+    UIkit.upload('.js-upload', {
+
+        url: '',
+        multiple: true,
+
+        beforeSend: function (environment) {
+            console.log('beforeSend', arguments);
+
+            // The environment object can still be modified here.
+            // var {data, method, headers, xhr, responseType} = environment;
+
+        },
+        beforeAll: function () {
+            console.log('beforeAll', arguments);
+        },
+        load: function () {
+            console.log('load', arguments);
+        },
+        error: function () {
+            console.log('error', arguments);
+        },
+        complete: function () {
+            console.log('complete', arguments);
+        },
+
+        loadStart: function (e) {
+            console.log('loadStart', arguments);
+
+            bar.removeAttribute('hidden');
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        progress: function (e) {
+            console.log('progress', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        loadEnd: function (e) {
+            console.log('loadEnd', arguments);
+
+            bar.max = e.total;
+            bar.value = e.loaded;
+        },
+
+        completeAll: function () {
+            console.log('completeAll', arguments);
+
+            setTimeout(function () {
+                bar.setAttribute('hidden', 'hidden');
+            }, 1000);
+
+            alert('Upload Completed');
+        }
+
+    });
+
+</script>
 </body>
 </html>

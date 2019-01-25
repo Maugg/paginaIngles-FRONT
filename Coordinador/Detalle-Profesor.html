@@ -86,6 +86,8 @@
                 <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
                 <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
+                <li><a href="Deshboard.html"><img  class="uk-icon-image" src="../img/maestro.svg  "></img> &nbsp; Profesores</a></li>
+                <li><a href="Detalle-grupos.html"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Grupos</a></li>
             </ul>
         </div>
         <div class="bar-bottom">
@@ -111,7 +113,8 @@
     <div id="content" data-uk-height-viewport="expand: true">
         <div id="content0" data-uk-height-viewport="expand: true">
             <div class="uk-container uk-container-expand">
-                <div class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl" data-uk-grid="">
+
+                <div class="uk-grid uk-grid-divider uk-grid-medium uk-child-width-1-2 uk-child-width-1-4@l uk-child-width-1-5@xl uk-margin-auto  uk-text-center" data-uk-grid="">
                     <div>
                         <span class="uk-text-small"><span data-uk-icon="icon:users" class="uk-margin-small-right uk-text-primary"></span>New Users</span>
                         <h1 class="uk-heading-primary uk-margin-remove  uk-text-primary">2.134</h1>
@@ -157,12 +160,11 @@
                 <div class="uk-container">
 
                     <div class="uk-container-expand">
-
-                    <h2 class="uk-text-center uk-margin-medium-top uk-background-primary"><span class="letra-titulo">Editar Profesor</span></h2>
+                        <h1 class="uk-heading-line uk-text-center uk-margin-small-top"><span>Detalles Nom. Profesor</span></h1>
 
                 <form class="">
                     <div  uk-grid="" >
-                        <div class="uk-grid-small uk-grid" uk-grid="">
+                        <div class="uk-grid-small uk-grid"  uk-grid="">
                             <div class="uk-width-1-1@s uk-width-1-5@m uk-first-column">Nick Name</label>
                                 <div class="uk-form-controls"><input  class="uk-input" placeholder="nick" type="text">
                                 </div>
@@ -189,20 +191,7 @@
                                 <div class="uk-form-controls"><input  class="uk-input" placeholder="correo-electronico" type="text">
                                 </div>
                             </div>
-
-
-                            <div class= "uk-width-1-1@s uk-width-1-5@m uk-first-column">Grado</label>
-
-                                <div class="uk-form-controls"><input  class="uk-input" placeholder="1°" type="text">
-                                </div>
-                            </div>
-
-                            <div class= "uk-width-1-1@s uk-width-1-5@m uk-first-column">Grupo</label>
-
-                                <div class="uk-form-controls"><input  class="uk-input" placeholder="B" type="text">
-                                </div>
-                            </div>
-                        </div>
+                          </div>
 
 
 
@@ -212,36 +201,41 @@
                 <div uk-grid="" class="uk-margin-medium-top ">
 
                     <div class="uk-width-auto@m uk-overflow-auto uk-width-expand@s ">
-                        <h3 class="uk-text-center uk-heading-line "><span class="">Datos de Grupos</span></h3>
+                        <h3 class="uk-text-center uk-heading-line "><span class="">Grupos de Nom. Profesor</span></h3>
                         <table class="limite uk-table uk-table-middle uk-table-hover uk-table-striped ">
+                            <thead>
                             <tr>
                                 <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Grado</span></th>
                                 <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Grupo</span></th>
-                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Eliminar</span></th>
-                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Reasignar</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Periodo</span></th>
+                                <th class="uk-background-primary uk-dark uk-text-center" scope="col"><span class="letra-titulo">Ver</span></th>
 
                             <tr>
+                            </thead>
+                            <tbody>
                             <tr>
                                 <td class="uk-text-center">1°</td>
                                 <td class="uk-text-center">B</td>
                                 <td class="uk-text-center">
                                     <div class=" boundary">
-                                        <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: trash" ></a>
-
+                                        <div class="uk-form-controls"><select  class="uk-select">	<option value="">seleccione periodo</option>
+                                            <option value="-32764">Ultimo dia</option>
+                                            <option value="-32765">ultima semana</option>
+                                            <option value="-32767">Ultimo mes</option>
+                                            <option value="-32763">Ultimos 6 Meses</option>
+                                            <option value="-32762">Todos</option>
+                                                                                    </select>
+                                        </div>
                                     </div>
+
+
 
                                 </td>
                                 <td>
-                                    <div class="uk-width-1-1@s uk-first-column">
-                                        <div class="uk-form-controls"><select  class="uk-select">	<option value="">seleccione una opción</option>
-                                            <option value="-32764">Profesor 1</option>
-                                            <option value="-32765">Profesor 2</option>
-                                            <option value="-32767">Profesor 3</option>
-                                            <option value="-32763">Profesor 4</option>
-                                            <option value="-32762">Profesor 5</option>
-                                            <option value="-32761">Profesor 6</option>
-                                        </select>
-                                        </div>
+                                    <div class="uk-flex uk-flex-center uk-margin-small-top ">
+
+                                        <button class="uk-button uk-button-primary"><a class="uk-link-reset" href="Detalle-grupo-profesor.html">Aceptar</a></button>
+
                                     </div>
 
                                 </td>
@@ -251,63 +245,55 @@
                                 <td class="uk-text-center">B</td>
                                 <td class="uk-text-center">
                                     <div class=" boundary">
-                                        <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: trash" ></a>
-
-                                    </div>
-
-                                </td>
-                                <td>
-                                    <div class="uk-width-1-1@s uk-first-column">
-                                        <div class="uk-form-controls"><select class="uk-select">	<option value="">seleccione una opción</option>
-                                            <option value="-32764">Profesor 1</option>
-                                            <option value="-32765">Profesor 2</option>
-                                            <option value="-32767">Profesor 3</option>
-                                            <option value="-32763">Profesor 4</option>
-                                            <option value="-32762">Profesor 5</option>
-                                            <option value="-32761">Profesor 6</option>
+                                        <div class="uk-form-controls"><select  class="uk-select">	<option value="">seleccione periodo</option>
+                                            <option value="-32764">Ultimo dia</option>
+                                            <option value="-32765">ultima semana</option>
+                                            <option value="-32767">Ultimo mes</option>
+                                            <option value="-32763">Ultimos 6 Meses</option>
+                                            <option value="-32762">Todos</option>
                                         </select>
                                         </div>
                                     </div>
 
+
+
                                 </td>
+
                             </tr>
+
+
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="5" class="uk-background-primary"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                            </tr>
+                            </tfoot>
+
                         </table>
+
+
+
+                        <div class="uk-margin" uk-grid>
+                            <div class="uk-panel uk-flex uk-flex-left uk-width-1-1@s uk-width-1-2@m">
+                                <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-primera"><span>&nbsp;</span></button>
+                                <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
+                                <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
+                                <button class="uk-button uk-button-secondary  uk-margin-small-right boton-paginacion boton-paginacion-ultima"><span>&nbsp;</span></button>
+                                <div class="uk-width-1-1@s uk-width-1-4@m">
+                                    <select class="uk-select">
+                                        <option>5</option>
+                                        <option>10</option>
+                                        <option>15</option>
+                                        <option>20</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                         </div>
 
                         <!-- Crear Grupo-->
 
-                    <div class="uk-width uk-width-1-2@l uk-first-columun ">
-                        <h3 class="uk-text-center uk-heading-line "><span class="">&nbsp</span></h3>
 
-                        <div class="uk-modal-header uk-background-primary">
-                            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Crear Grupo</span></p>
-                        </div>
-                        <div class="uk-width-1-1@s @m ">
-                            <label class="uk-text-capitalize uk-form-label">Grado</label>
-                            <div class="uk-form-controls"><select  class="uk-select">	<option value="">seleccione una opción</option>
-                                <option value="-32764">1°</option>
-                                <option value="-32765">2°</option>
-                                <option value="-32767">3°</option>
-                                <option value="-32763">4°</option>
-                                <option value="-32762">5°</option>
-                                <option value="-32761">6°</option>
-                                </select>
-                            </div>
-                        </div>
-
-
-                        <div class= "uk-width-1-1@s  ">Grupo</label>
-
-                            <div class="uk-form-controls"><input  class="uk-input" placeholder="A-Z" type="text">
-                            </div>
-                        </div>
-
-                        <div class="uk-flex uk-flex-right uk-margin-small-top">
-                            <button class="uk-button uk-button-primary  " >Crear</button>
-
-                        </div>
-
-                    </div>
 
                         <!-- Fin Crear Grupo-->
 
@@ -364,7 +350,50 @@
 
     <!-- /OFFCANVAS -->
 </div>
+<div id="modal-comentarios" class="uk-modal-container" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header">
 
+            <div class="uk-modal-header uk-background-secondary">
+                <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Comentarios Grupo</span></p>
+            </div>
+            <div class="uk-navbar-item  uk-visible@s uk-flex-center ">
+                <form action="dashboard.html" class="uk-search uk-search-default">
+                    <span data-uk-search-icon></span>
+                    <input class="uk-search-input search-field " type="search" placeholder="Alumno">
+                </form>
+            </div>
+
+
+        </div>
+
+        <div class="uk-modal-body">
+            <ul uk-accordion="multiple: true">
+                <li class="uk-open">
+                    <a class="uk-accordion-title" href="#">Item 1</a>
+                    <div class="uk-accordion-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 2</a>
+                    <div class="uk-accordion-content">
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                    </div>
+                </li>
+                <li>
+                    <a class="uk-accordion-title" href="#">Item 3</a>
+                    <div class="uk-accordion-content">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+
+    </div>
+</div>
 
 
 <script src="../js/uikit.js" ></script>
