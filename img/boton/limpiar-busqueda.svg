@@ -1,109 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 5.2916665 5.2916665"
-   height="20"
-   width="20"
-   sodipodi:docname="limpiar-busqueda.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="3840"
-     inkscape:window-height="2066"
-     id="namedview847"
-     showgrid="false"
-     inkscape:zoom="92.15"
-     inkscape:cx="8.0572692"
-     inkscape:cy="11.314957"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg8" />
-  <defs
-     id="defs2">
-    <linearGradient
-       osb:paint="solid"
-       id="linearGradient819">
-      <stop
-         id="stop817"
-         offset="0"
-         style="stop-color:#000000;stop-opacity:1;" />
-    </linearGradient>
-  </defs>
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <circle
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="path827"
-     cx="3.1506963"
-     cy="3.2859466"
-     r="0.89872432" />
-  <path
-     inkscape:connector-curvature="0"
-     style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 3.8808358,3.9312514 c 1.0501191,0.949097 1.0501191,0.949097 1.0501191,0.949097 v 0"
-     id="path831" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 1.9961667,1.5772755 c -0.00835,1.56186 -0.00835,1.56186 -0.00835,1.56186"
-     id="path841"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
-     d="m 2.8093919,1.5801447 c -0.00852,0.8177458 -0.00852,0.8177458 -0.00852,0.8177458"
-     id="path841-7"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 0.31737992,0.95504552 c 4.12179718,0 4.12179718,0 4.12179718,0"
-     id="path858"
-     inkscape:connector-curvature="0" />
-  <rect
-     style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26458332;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     id="rect823-0"
-     width="1.5762812"
-     height="0.52982062"
-     x="1.6000565"
-     y="0.41961238" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="M 3.6565716,0.98117128 C 3.6482404,2.481183 3.6482404,2.481183 3.6482404,2.481183"
-     id="path841-7-7"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 1.0979868,0.89359622 c -0.0081,3.11685888 -0.0081,3.11685888 -0.0081,3.11685888"
-     id="path841-6"
-     inkscape:connector-curvature="0" />
-  <path
-     style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-     d="m 0.95675819,3.9241023 c 1.54918021,0 1.54918021,0 1.54918021,0"
-     id="path858-9"
-     inkscape:connector-curvature="0" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="limpiarbusqueda" viewBox="0 0 20 20">
+
+  <polyline fill="none" stroke="#000" points="4.5 3 4.5 1.5 10.5 1.5 10.5 3" />
+  <rect x="3" y="3" width="1" height="15"/>
+  <rect x="5.8" y="7" width="1" height="7" />
+  <rect x="8.7" y="7" width="1" height="4" />
+  <rect x="1" y="3" width="13" height="1" />
+  <circle fill="none" stroke="#000" stroke-width="1.1" cx="11" cy="14" r="4" />
+  <path fill="none" stroke="#000" stroke-width="1.1" d="M14,16 L18,18 L14,16 Z" />
 </svg>
