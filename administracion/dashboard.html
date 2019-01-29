@@ -105,7 +105,6 @@
                                     <div class="uk-flex uk-flex-between">
                                         <span class="titulo-blanco">cct</span>
                                         <a class="titulo-blanco" class="uk-navbar-toggle" href="#modal-busqueda-cct" uk-search-icon uk-toggle>
-
                                         </a>
 
                                     </div>
@@ -119,7 +118,8 @@
                                     </div>
                                 </th>
                                 <th class="uk-width-small uk-text-center"><span class="titulo-blanco">licencias</span></th>
-                                <th class="uk-width-small uk-text-center"><span class="titulo-blanco">dias a expirar</span></th>
+                                <th class="uk-width-small uk-text-center"><span class="titulo-blanco">días restantes</span></th>
+                                <th class="uk-width-small uk-text-center"><span class="titulo-blanco">estatus</span></th>
                                 <th class="uk-width-small uk-text-center"><span class="titulo-blanco">opciones</span></th>
                             </tr>
                         </thead>
@@ -129,6 +129,7 @@
                                 <td>Benito Juarez</td>
                                 <td class="uk-text-center">3</td>
                                 <td class="uk-text-center">321</td>
+                                <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="check"></span></td>
                                 <td class="uk-text-center">
                                     <div class="boundary">
                                         <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"></a>
@@ -148,6 +149,7 @@
                                 <td>Benito Juarez</td>
                                 <td class="uk-text-center">3</td>
                                 <td class="uk-text-center">321</td>
+                                <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="check"></span></td>
                                 <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="more-vertical"></span></td>
                             </tr>
                             <tr>
@@ -155,6 +157,7 @@
                                 <td>Benito Juarez</td>
                                 <td class="uk-text-center">3</td>
                                 <td class="uk-text-center">321</td>
+                                <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="check"></span></td>
                                 <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="more-vertical"></span></td>
                             </tr>
                             <tr>
@@ -162,6 +165,7 @@
                                 <td>Benito Juarez</td>
                                 <td class="uk-text-center">3</td>
                                 <td class="uk-text-center">321</td>
+                                <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="check"></span></td>
                                 <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="more-vertical"></span></td>
                             </tr>
                             <tr>
@@ -169,33 +173,37 @@
                                 <td>Benito Juarez</td>
                                 <td class="uk-text-center">3</td>
                                 <td class="uk-text-center">321</td>
+                                <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="check"></span></td>
                                 <td class="uk-text-center"><span class="uk-icon-button uk-margin-small-right" uk-icon="more-vertical"></span></td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="5" class="uk-background-primary"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                <td colspan="6" class="uk-background-primary"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
-                <div class="uk-margin" uk-grid>
-                    <div class="uk-panel uk-flex uk-flex-left uk-width-1-1@s uk-width-1-2@m">
-                        <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-primera"><span>&nbsp;</span></button>
-                        <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
-                        <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
-                        <button class="uk-button uk-button-secondary uk-border-rounded uk-margin-small-right boton-paginacion boton-paginacion-ultima"><span>&nbsp;</span></button>
-                        <div class="uk-width-1-1@s uk-width-1-4@m">
-                            <select class="uk-select">
-                                <option>5</option>
-                                <option>10</option>
-                                <option>15</option>
-                                <option>20</option>
-                            </select>
+                <form action="">
+                <div class="uk-margin-top" uk-grid>
+
+                        <div class="uk-panel uk-flex uk-flex-left uk-width-1-1@s uk-width-1-2@m">
+                            <button class="uk-button uk-button-secondary uk-margin-small-right boton-paginacion boton-paginacion-primera"><span>&nbsp;</span></button>
+                            <button class="uk-button uk-button-secondary uk-margin-small-right boton-paginacion boton-paginacion-anterior"><span>&nbsp;</span></button>
+                            <button class="uk-button uk-button-secondary uk-margin-small-right boton-paginacion boton-paginacion-siguiente"><span>&nbsp;</span></button>
+                            <button class="uk-button uk-button-secondary uk-margin-small-right boton-paginacion boton-paginacion-ultima"><span>&nbsp;</span></button>
+                            <div class="uk-width-1-1@s uk-width-1-4@m">
+                                <select class="uk-select">
+                                    <option>5</option>
+                                    <option>10</option>
+                                    <option>15</option>
+                                    <option>20</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
+
                     <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-1-1@s uk-width-1-2@m">
-                        <button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-escuela">
+                        <button class="uk-button uk-button-primary" uk-toggle="target: #modal-escuela">
                             <span class="uk-margin-small-right">agregar</span>
                             <span uk-icon="icon: plus-circle"></span>
                             <div id="my-id" class="uk-flex-top" uk-modal>
@@ -203,34 +211,52 @@
                             </div>
                         </button>
                     </div>
+                    <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-1-1@s uk-width-1-4@m">
+                        <button class="uk-button uk-button-primary" uk-toggle="target: #modal-escuela">
+                            <span class="uk-margin-small-right">limpiar</span>
+                            <span uk-icon=" ">
+                                <img class="custom-logo" src="../img/boton/limpiar-busqueda.svg" alt="">
+                            </span>
+                        </button>
+                    </div>
                 </div>
+                </form>
                 <div id="modal-busqueda-nombre" class="uk-flex-top" uk-modal>
-                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-                        <button class="uk-modal-close-default" type="button" uk-close></button>
-                        <div class="uk-modal-header">
-                            <h2 class="uk-modal-title">Búsqueda por Nombre</h2>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <div class="uk-modal-header uk-background-secondary">
+                            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Busca por Nombre</span></p>
                         </div>
-
-                        <form>
-                            <div class="uk-margin">
-                                <input class="uk-input" type="text" placeholder="Búsqueda por nombre de Escuela">
-                            </div>
-                        </form>
-                        
+                        <div class="uk-modal-body">
+                            <form>
+                                <div class="uk-margin">
+                                    <span class=" ">Palabra Clave</span>
+                                    <input class="uk-input" type="text" placeholder="Escriba texto...">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-modal-footer uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+                            <button class="uk-button uk-button-secondary" type="button">Buscar</button>
+                        </div>
                     </div>
                 </div>
                 <div id="modal-busqueda-cct" class="uk-flex-top" uk-modal>
-                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-                        <button class="uk-modal-close-default" type="button" uk-close></button>
-                        <div class="uk-modal-header">
-                            <h2 class="uk-modal-title">Búsqueda por CCT</h2>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                        <div class="uk-modal-header uk-background-secondary">
+                            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Busca por CCT</span></p>
                         </div>
-                        <form>
-                            <div class="uk-margin">
-                                <input class="uk-input" type="text" placeholder="Búsqueda por CCT">
-                            </div>
-                        </form>
+                        <div class="uk-modal-body">
+                            <form>
+                                <div class="uk-margin">
+                                    <span class=" ">Palabra Clave</span>
+                                    <input class="uk-input" type="text" placeholder="Escriba texto...">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="uk-modal-footer uk-text-right">
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+                            <button class="uk-button uk-button-secondary" type="button">Buscar</button>
+                        </div>
                     </div>
                 </div>
                 <div id="modal-escuela" class="uk-modal-container" uk-modal>
@@ -260,7 +286,7 @@
                                     </div>
                                 </div>
                                 <div class="uk-inline uk-width-1-1@s uk-width-1-6@m ">
-                                    <button class="uk-button uk-button-secondary uk-border-rounded uk-position-bottom-center">Buscar</button>
+                                    <button class="uk-button uk-button-secondary uk-position-bottom-center">Buscar</button>
                                 </div>
                                 <div class="uk-inline uk-width-1-1@s uk-width-1-2@m">
                                     <!--<label class="uk-form-label" for="input-colonia">Colonia</label>
@@ -306,8 +332,8 @@
                             </form>
                         </div>
                         <div class="uk-modal-footer uk-text-right">
-                            <button class="uk-button uk-button-default uk-modal-close uk-border-rounded" type="button">Cancelar</button>
-                            <button class="uk-button uk-button-secondary uk-border-rounded" type="button">Guardar</button>
+                            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+                            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
                         </div>
                     </div>
                 </div>

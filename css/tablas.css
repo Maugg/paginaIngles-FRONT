@@ -65,3 +65,7 @@ a.links > span:hover{
 .boton-paginacion-ultima:disabled {
     background-image: url(../img/boton/ultimo-deshabilitado.svg);
 }
+
+.uk-button span img {
+    stroke: white;
+}
