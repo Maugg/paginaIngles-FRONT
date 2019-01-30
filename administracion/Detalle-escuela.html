@@ -13,340 +13,364 @@
 <body class="">
 
 <!-- <div class="uk-container uk-container-expand"> -->
-    <div class="uk-offcanvas-content">
+            <div class="uk-offcanvas-content">
 
-    <header id="top-head" class="uk-position-fixed">
-        <div class="uk-container uk-container-expand uk-background-primary">
-            <!-- navbar de la pagina -->
-            <nav class="uk-navbar uk-light" data-uk-navbar="mode:click; duration: 250">
-
-
-                <div class="uk-navbar-left">
-                    <div class="uk-navbar-item uk-hidden@m">
-                        <a class="uk-logo" href="#"><img class="custom-logo" src="../img/white_escuadron.svg" alt=""></a>
-                    </div>
-                </div>
-
-                <div class="uk-navbar-center">
+            <header id="top-head" class="uk-position-fixed">
+                <div class="uk-container uk-container-expand uk-background-primary">
+                    <!-- navbar de la pagina -->
+                    <nav class="uk-navbar uk-light" data-uk-navbar="mode:click; duration: 250">
 
 
-
-                    <!-- ******************input de busqueda******************** -->
-                    <div class="uk-navbar-item  uk-visible@s ">
-                        <form action="dashboard.html" class="uk-search uk-search-default">
-                            <span data-uk-search-icon></span>
-                            <input class="uk-search-input search-field " type="search" placeholder="Search">
-                        </form>
-                    </div>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#" data-uk-icon="icon:user" title="Your profile" data-uk-tooltip></a></li>
-                        <li><a href="#" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a></li>
-                        <li><a href="#" data-uk-icon="icon:  sign-out" title="Sign Out" data-uk-tooltip></a></li>
-                        <li><a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" title="Offcanvas" data-uk-tooltip></a></li>
-                    </ul>
-                </div>
-            </nav>
-            <!-- fin navbar -->
-        </div>
-    </header>
-    <!-- menu del lado izquierdo -->
-    <aside id="left-col" class="uk-light uk-visible@m">
-        <div class="left-logo uk-flex uk-flex-middle">
-            <img class="custom-logo margen10" src="../img/white_escuadron.svg" alt="">
-            <span class="lescuadron letra-logo ">scuadron</span>
-        </div>
-        <div class="left-content-box  content-box-dark">
-            <img src="../img/superadmin.svg" alt="" class="uk-border-circle profile-img " id="admin" uk-svg>
-            <h4 class="uk-text-center uk-margin-remove-vertical text-light">Noldi Vives</h4>
-            <div class="uk-position-relative uk-text-center uk-display-block">
-                <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center" data-uk-icon="icon: triangle-down; ratio: 0.7">Admin</a>
-                <!-- user dropdown -->
-                <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
-                    <ul class="uk-nav uk-dropdown-nav uk-text-left">
-                        <li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
-                        <li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
-                        <li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
-                    </ul>
-                </div>
-                <!-- /user dropdown -->
-            </div>
-        </div>
-
-        <div class="left-nav-wrap">
-            <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
-                <li class="uk-nav-header">dashboard</li>
-
-                <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
-                <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
-                <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
-            </ul>
-        </div>
-        <div class="bar-bottom">
-            <ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5" data-uk-grid>
-                <li>
-                    <a href="#" class="uk-icon-link" data-uk-icon="icon: home" title="Home" data-uk-tooltip></a>
-                </li>
-                <li>
-                    <a href="#" class="uk-icon-link" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a>
-                </li>
-                <li>
-                    <a href="#" class="uk-icon-link" data-uk-icon="icon: social"  title="Social" data-uk-tooltip></a>
-                </li>
-
-                <li>
-                    <a href="#" class="uk-icon-link" data-uk-tooltip="Sign out" data-uk-icon="icon: sign-out"></a>
-                </li>
-            </ul>
-        </div>
-    </aside>
-    <!-- fin menu lado izquierdo -->
-    <!-- CONTENT -->
-    <div id="content" data-uk-height-viewport="expand: true">
-        <div class="uk-container   ">
-
-            <div class="uk-container-large ">
-
-
-                <h1 class="uk-heading-line uk-text-center uk-padding-small" ><span >Detalles de la Escuela</span></h1>
-
-                <h2 class="uk-text-center uk-margin-medium-top uk-background-primary uk-padding-small"><span class="letra-titulo">Datos de la escuela</span></h2>
-
-                <form class="">
-                    <div  uk-grid="" >
-
-
-                                <div class="uk-width-1-5@m uk-width-1-1@s ">
-                                    <label class="uk-form-label" for="cctv" >CCT</label>
-                                    <input id="cctv" placeholder="21DBA0004C" disabled="disabled" type="text" class="uk-input">
-                                </div>
-
-                                <div class="uk-width-3-5@m uk-width-1-1@s" >
-                                    <label class="uk-form-label" for="nombre-escuela" >Nombre</label>
-                                    <input id="nombre-escuela" placeholder="Francisco I Madero " disabled="disabled" type="text" class="uk-input">
-                                </div>
-                                 <div class="uk-width-1-5@m uk-width-1-1@s">
-                                   <label class="uk-form-label" for="codigo-postal" >Código postal</label>
-                                   <input id="codigo-postal" placeholder="72730" disabled="disabled" type="text" class="uk-input">
-                                 </div>
-
-
-                                <div class="uk-width-1-2@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="colonia" >Colonia</label>
-                                    <input id="colonia" placeholder="Reforma" disabled="disabled" type="text" class="uk-input">
-
-                                </div>
-                                <div class="uk-width-1-2@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="municipio" >Municipio</label>
-                                    <input id="municipio" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
-                                </div>
-                                <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="estado" >Estado</label>
-                                    <input id="estado" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
-                                </div>
-
-                                <div class="uk-width-3-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="calle" >Calle</label>
-                                    <input id="calle" placeholder="Calle 4 Sur No. 311, Reforma Sur, 72170 Puebla, Pue. " disabled="disabled" type="text" class="uk-input">
-                                </div>
-                                <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="numero-exterior" >Número Exterior</label>
-                                    <input id="numero-exterior" placeholder="Número interior" disabled="disabled" type="text" class="uk-input">
-                                </div>
-                                <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="numero-interior" >Número Interior</label>
-                                    <input id="numero-interior" placeholder="Número exterior" disabled="disabled" type="text" class="uk-input">
-                                </div>
-                               <div class="uk-width-1-5@m uk-width-1-1@s">
-                                   <label class="uk-form-label" for="estado-bloqueo" >Estado de Bloqueo</label>
-                                    <input id="estado-bloqueo" placeholder="Activo" disabled="disabled" type="text" class="uk-input">
-                               </div>
-                                <div class="uk-width-1-5@m uk-width-1-1@s">
-                                    <label class="uk-form-label" for="licencias" >Licencias</label>
-                                    <input id="licencias" placeholder="2" disabled="disabled" type="text" class="uk-input">
-                                </div>
-
-
-
-
-                    </div>
-                </form>
-                <div uk-grid="" class="uk-margin-medium-top ">
-
-                    <div class="uk-width-auto@m uk-overflow-auto uk-width-expand@s ">
-                        <h3 class="uk-text-center uk-heading-line "><span class="">Contactos</span></h3>
-                        <table class="uk-table uk-table-small uk-margin-remove-top uk-table-divider uk-table-hover" >
-                            <thead >
-                                <tr class="uk-background-primary ">
-                                    <th ><span class="letra-titulo">Nombre</span></th>
-                                    <th ><span class="letra-titulo">Tipo</span></th>
-                                    <th><span class="letra-titulo">Teléfono</span></th>
-                                    <th><span class="letra-titulo">Opciones</span></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Coordinador</td>
-                                    <td>(222)2307383</td>
-                                    <td class="uk-text-center ">
-                                        <div class=" boundary">
-                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
-                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                <ul class="uk-nav uk-dropdown-nav uk-text-left ">
-                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Coordinador</td>
-                                    <td>(222)2307383</td>
-                                    <td class="uk-text-center ">
-                                        <div class=" boundary">
-                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
-                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                <ul class="uk-nav uk-dropdown-nav">
-                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Coordinador</td>
-                                    <td>(222)2307383</td>
-                                    <td class="uk-text-center">
-                                        <div class="boundary">
-                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
-                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                <ul class="uk-nav uk-dropdown-nav">
-                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Mauricio Garcia Gonzalez de la Rosa</td>
-                                    <td>Coordinador</td>
-                                    <td>(222)2307383</td>
-                                    <td class="uk-text-center ">
-                                       <div class=" boundary">
-                                            <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"  ></a>
-                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                <ul class="uk-nav uk-dropdown-nav">
-                                                    <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
-                                                    <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
-
-                                                </ul>
-                                            </div>
-                                       </div>
-
-                                    </td>
-                                </tr>
-                            </tbody>
-
-
-                        </table>
-                        <div class="uk-flex uk-flex-right uk-margin-small-top "><button class="uk-button uk-button-primary uk-border-rounded"  uk-toggle="target: #modal-agregar-contacto" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
-                    </div>
-
-
-                    <div class="uk-width-auto@m uk-overflow-auto ">
-
-                        <h3 class=" uk-text-center uk-heading-line"><span>Licencias</span></h3>
-                        <table class="uk-table uk-table-small uk-table-divider uk-table-hover uk-table-middle">
-                            <thead class="uk-text-center">
-                                <tr class="uk-background-primary ">
-                                    <th><span class="letra-titulo">ID</span></th>
-                                    <th class="uk-text-center"><span class="letra-titulo">Usuarios Restantes</span></th>
-                                </tr>
-                            </thead>
-                            <tbody class="uk-text-center">
-                                <tr>
-                                    <td>1</td>
-                                    <td>0</td>
-                                </tr>
-                                <tr class="">
-                                    <td>2</td>
-                                    <td >52</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
-                        <div class="uk-flex uk-flex-right"><button class="uk-button uk-button-primary uk-border-rounded" uk-toggle="target: #modal-agregar-licencia" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
-
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-        <!-- OFFCANVAS  -->
-    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
-        <div class=" uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
-                    <button class="uk-offcanvas-close uk-close uk-icon " type="button" data-uk-close></button>
-                    <ul class="uk-nav uk-nav-default">
-                        <!-- <li class="uk-active"><a href="#">Active</a></li>
-                        <li class="uk-parent">
-                          <a href="#">Parent</a>
-                          <ul class="uk-nav-sub">
-                            <li><a href="#">Sub item</a></li>
-                            <li><a href="#">Sub item</a></li>
-                          </ul>
-                        </li> -->
-                        <li class="uk-nav-header">dashboard</li>
-                        <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span>Lista de Escuelas</a></li>
-                        <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: comments"></span> Item</a></li>
-                        <li class="uk-nav-divider"></li>
-                        <!-- <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li> -->
-                        <div class="left-content-box uk-margin-top">
-
-                            <h5>Daily Reports</h5>
-                            <div>
-                                <span class="uk-text-small">Escuelas Proximas a caducar <small>(+50)</small></span>
-                                <progress class="uk-progress" value="50" max="100"></progress>
+                        <div class="uk-navbar-left">
+                            <div class="uk-navbar-item uk-hidden@m">
+                                <a class="uk-logo" href="#"><img class="custom-logo" src="../img/white_escuadron.svg" alt=""></a>
                             </div>
-                            <div>
-                                <span class="uk-text-small">Total de licencias vendidas <small>(+78)</small></span>
-                                <progress class="uk-progress success" value="78" max="100"></progress>
-                            </div>
-                            <!-- <div>
-                              <span class="uk-text-small">Feedback <small>(-12)</small></span>
-                              <progress class="uk-progress warning" value="12" max="100"></progress>
-                            </div> -->
-
                         </div>
+
+                        <div class="uk-navbar-center">
+
+
+
+                            <!-- ******************input de busqueda******************** -->
+                            <div class="uk-navbar-item  uk-visible@s ">
+                                <form action="dashboard.html" class="uk-search uk-search-default">
+                                    <span data-uk-search-icon></span>
+                                    <input class="uk-search-input search-field " type="search" placeholder="Search">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="#" data-uk-icon="icon:user" title="Your profile" data-uk-tooltip></a></li>
+                                <li><a href="#" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a></li>
+                                <li><a href="#" data-uk-icon="icon:  sign-out" title="Sign Out" data-uk-tooltip></a></li>
+                                <li><a class="uk-navbar-toggle uk-hidden@m" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav" title="Offcanvas" data-uk-tooltip></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- fin navbar -->
+                </div>
+            </header>
+            <!-- menu del lado izquierdo -->
+            <aside id="left-col" class="uk-light uk-visible@m">
+                <div class="left-logo uk-flex uk-flex-middle">
+                    <img class="custom-logo margen10" src="../img/white_escuadron.svg" alt="">
+                    <span class="lescuadron letra-logo ">scuadron</span>
+                </div>
+                <div class="left-content-box  content-box-dark">
+                    <img src="../img/superadmin.svg" alt="" class="uk-border-circle profile-img " id="admin" uk-svg>
+                    <h4 class="uk-text-center uk-margin-remove-vertical text-light">Noldi Vives</h4>
+                    <div class="uk-position-relative uk-text-center uk-display-block">
+                        <a href="#" class="uk-text-small uk-text-muted uk-display-block uk-text-center" data-uk-icon="icon: triangle-down; ratio: 0.7">Admin</a>
+                        <!-- user dropdown -->
+                        <div class="uk-dropdown user-drop" data-uk-dropdown="mode: click; pos: bottom-center; animation: uk-animation-slide-bottom-small; duration: 150">
+                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
+                                <li><a href="#"><span data-uk-icon="icon: info"></span> Summary</a></li>
+                                <li><a href="#"><span data-uk-icon="icon: refresh"></span> Edit</a></li>
+                                <li><a href="#"><span data-uk-icon="icon: settings"></span> Configuration</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#"><span data-uk-icon="icon: image"></span> Your Data</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><a href="#"><span data-uk-icon="icon: sign-out"></span> Sign Out</a></li>
+                            </ul>
+                        </div>
+                        <!-- /user dropdown -->
+                    </div>
+                </div>
+
+                <div class="left-nav-wrap">
+                    <ul class="uk-nav uk-nav-default uk-nav-parent-icon" data-uk-nav>
+                        <li class="uk-nav-header">dashboard</li>
+
+                        <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
+                        <li><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                        <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
+                        <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
                     </ul>
-                    <h3>Title</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-    </div>
+                </div>
+                <div class="bar-bottom">
+                    <ul class="uk-subnav uk-flex uk-flex-center uk-child-width-1-5" data-uk-grid>
+                        <li>
+                            <a href="#" class="uk-icon-link" data-uk-icon="icon: home" title="Home" data-uk-tooltip></a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-icon-link" data-uk-icon="icon: settings" title="Settings" data-uk-tooltip></a>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-icon-link" data-uk-icon="icon: social"  title="Social" data-uk-tooltip></a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="uk-icon-link" data-uk-tooltip="Sign out" data-uk-icon="icon: sign-out"></a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- fin menu lado izquierdo -->
+
+            <!-- CONTENT -->
+            <div id="content" data-uk-height-viewport="expand: true">
+                <div class="uk-container   ">
+
+                    <div class="uk-container-large ">
 
 
-    <!-- /OFFCANVAS -->
-   </div>
+                        <h1 class="uk-heading-line uk-text-center uk-padding-small" ><span >Detalles de la Escuela</span></h1>
+
+                        <h2 class="uk-text-center uk-margin-medium-top uk-background-primary uk-padding-small"><span class="letra-titulo">Datos de la escuela</span></h2>
+
+                        <form class="">
+                            <div  uk-grid="" >
+
+
+                                        <div class="uk-width-1-5@m uk-width-1-1@s ">
+                                            <label class="uk-form-label" for="cctv" >CCT</label>
+                                            <input id="cctv" placeholder="21DBA0004C" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+
+                                        <div class="uk-width-3-5@m uk-width-1-1@s" >
+                                            <label class="uk-form-label" for="nombre-escuela" >Nombre</label>
+                                            <input id="nombre-escuela" placeholder="Francisco I Madero " disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                         <div class="uk-width-1-5@m uk-width-1-1@s">
+                                           <label class="uk-form-label" for="codigo-postal" >Código postal</label>
+                                           <input id="codigo-postal" placeholder="72730" disabled="disabled" type="text" class="uk-input">
+                                         </div>
+
+
+                                        <div class="uk-width-1-2@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="colonia" >Colonia</label>
+                                            <input id="colonia" placeholder="Reforma" disabled="disabled" type="text" class="uk-input">
+
+                                        </div>
+                                        <div class="uk-width-1-2@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="municipio" >Municipio</label>
+                                            <input id="municipio" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="estado" >Estado</label>
+                                            <input id="estado" placeholder="Puebla" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+
+                                        <div class="uk-width-3-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="calle" >Calle</label>
+                                            <input id="calle" placeholder="Calle 4 Sur No. 311, Reforma Sur, 72170 Puebla, Pue. " disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="numero-exterior" >Número Exterior</label>
+                                            <input id="numero-exterior" placeholder="Número interior" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="numero-interior" >Número Interior</label>
+                                            <input id="numero-interior" placeholder="Número exterior" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                       <div class="uk-width-1-5@m uk-width-1-1@s">
+                                           <label class="uk-form-label" for="estado-bloqueo" >Estado de Bloqueo</label>
+                                            <input id="estado-bloqueo" placeholder="Activo" disabled="disabled" type="text" class="uk-input">
+                                       </div>
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" for="licencias" >Licencias</label>
+                                            <input id="licencias" placeholder="2" disabled="disabled" type="text" class="uk-input">
+                                        </div>
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <label class="uk-form-label" ></label>
+
+                                        </div>
+
+                                        <div class="uk-width-1-5@m uk-width-1-1@s">
+                                            <div class="uk-width-1-1@m  uk-flex uk-flex-right@m uk-flex-center@s">
+                                            <label class="uk-width-1-1@m uk-width-1-2@suk-panel uk-form-label" for="licencias" >Ver Coordinadores</label>
+                                            </div>
+                                            <div class="uk-width-1-1@m  uk-flex uk-flex-right@m uk-flex-center@s">
+
+                                                <a class="uk-link-reset" href="Detalles-escuela-coord.html">
+                                                <button class="uk-button uk-button-primary"><span>Coord(a)</span><span class="uk-margin-small-left " uk-icon="icon: users"></span></button>
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+
+                            </div>
+                        </form>
+                        <div uk-grid="" class="uk-margin-medium-top ">
+
+                            <div class="uk-width-auto@m uk-overflow-auto uk-width-expand@s ">
+                                <h3 class="uk-text-center uk-heading-line "><span class="">Contactos</span></h3>
+                                <table class="uk-table uk-table-small uk-margin-remove-top uk-table-divider uk-table-hover" >
+                                    <thead >
+                                        <tr class="uk-background-primary ">
+                                            <th ><span class="letra-titulo">Nombre</span></th>
+                                            <th ><span class="letra-titulo">Tipo</span></th>
+                                            <th><span class="letra-titulo">Teléfono</span></th>
+                                            <th><span class="letra-titulo">Opciones</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                            <td>Coordinador</td>
+                                            <td>(222)2307383</td>
+                                            <td class="uk-text-center ">
+                                                <div class=" boundary">
+                                                    <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                    <div uk-dropdown="mode: click; boundary: .boundary">
+                                                        <ul class="uk-nav uk-dropdown-nav uk-text-left ">
+                                                            <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                            <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                            <td>Coordinador</td>
+                                            <td>(222)2307383</td>
+                                            <td class="uk-text-center ">
+                                                <div class=" boundary">
+                                                    <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                    <div uk-dropdown="mode: click; boundary: .boundary">
+                                                        <ul class="uk-nav uk-dropdown-nav">
+                                                            <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                            <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                            <td>Coordinador</td>
+                                            <td>(222)2307383</td>
+                                            <td class="uk-text-center">
+                                                <div class="boundary">
+                                                    <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                    <div uk-dropdown="mode: click; boundary: .boundary">
+                                                        <ul class="uk-nav uk-dropdown-nav">
+                                                            <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                            <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mauricio Garcia Gonzalez de la Rosa</td>
+                                            <td>Coordinador</td>
+                                            <td>(222)2307383</td>
+                                            <td class="uk-text-center ">
+                                               <div class=" boundary">
+                                                    <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical"  ></a>
+                                                    <div uk-dropdown="mode: click; boundary: .boundary">
+                                                        <ul class="uk-nav uk-dropdown-nav">
+                                                            <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#modal-eliminar" uk-toggle="">Eliminar</a></span></li>
+                                                            <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#modal-modificar" uk-toggle="">Modificar</a></span></li>
+
+                                                        </ul>
+                                                    </div>
+                                               </div>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+                                <div class="uk-flex uk-flex-right uk-margin-small-top "><button class="uk-button uk-button-primary"  uk-toggle="target: #modal-agregar-contacto" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
+                            </div>
+
+
+                            <div class="uk-width-auto@m uk-overflow-auto ">
+
+                                <h3 class=" uk-text-center uk-heading-line"><span>Licencias</span></h3>
+                                <table class="uk-table uk-table-small uk-table-divider uk-table-hover uk-table-middle">
+                                    <thead class="uk-text-center">
+                                        <tr class="uk-background-primary ">
+                                            <th><span class="letra-titulo">ID</span></th>
+                                            <th class="uk-text-center"><span class="letra-titulo">Usuarios Restantes</span></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="uk-text-center">
+                                        <tr>
+                                            <td>1</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>2</td>
+                                            <td >52</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                                <div class="uk-flex uk-flex-right"><button class="uk-button uk-button-primary" uk-toggle="target: #modal-agregar-licencia" ><span >Agregar</span> <span class="uk-margin-small-left " uk-icon="icon: plus-circle"></span> </button></div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+                <!-- OFFCANVAS  -->
+            <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: true">
+                <div class=" uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+                            <button class="uk-offcanvas-close uk-close uk-icon " type="button" data-uk-close></button>
+                            <ul class="uk-nav uk-nav-default">
+                                <!-- <li class="uk-active"><a href="#">Active</a></li>
+                                <li class="uk-parent">
+                                  <a href="#">Parent</a>
+                                  <ul class="uk-nav-sub">
+                                    <li><a href="#">Sub item</a></li>
+                                    <li><a href="#">Sub item</a></li>
+                                  </ul>
+                                </li> -->
+                                <li class="uk-nav-header">dashboard</li>
+                                <li><a href="#js-options"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: thumbnails"></span>Lista de Escuelas</a></li>
+                                <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: comments"></span> Item</a></li>
+                                <li class="uk-nav-divider"></li>
+                                <!-- <li><a href="#"><span class="uk-margin-small-right uk-icon" data-uk-icon="icon: trash"></span> Item</a></li> -->
+                                <div class="left-content-box uk-margin-top">
+
+                                    <h5>Daily Reports</h5>
+                                    <div>
+                                        <span class="uk-text-small">Escuelas Proximas a caducar <small>(+50)</small></span>
+                                        <progress class="uk-progress" value="50" max="100"></progress>
+                                    </div>
+                                    <div>
+                                        <span class="uk-text-small">Total de licencias vendidas <small>(+78)</small></span>
+                                        <progress class="uk-progress success" value="78" max="100"></progress>
+                                    </div>
+                                    <!-- <div>
+                                      <span class="uk-text-small">Feedback <small>(-12)</small></span>
+                                      <progress class="uk-progress warning" value="12" max="100"></progress>
+                                    </div> -->
+
+                                </div>
+                            </ul>
+                            <h3>Title</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+
+
+            <!-- /OFFCANVAS -->
+           </div>
+
+
             <div id="modal-eliminar" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
@@ -443,7 +467,7 @@
                 </div>
             </div>
 
-        <div id="modal-agregar-licencia" uk-modal="" class="">
+            <div id="modal-agregar-licencia" uk-modal="" class="">
                 <div class="uk-modal-dialog uk-margin-auto-vertical">
 
                     <div class="uk-modal-header uk-background-secondary">
