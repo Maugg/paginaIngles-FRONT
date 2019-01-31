@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio</title>
+    <title>Dashboard-Coord</title>
     <link rel="stylesheet" type="text/css" href="../css/uikit.css">
     <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
     <link rel="stylesheet" type="text/css" href="../css/estilo-navbar.css">
@@ -161,16 +161,16 @@
                     </div>
                 </div>
 
+                <!-- Multimedia -->
+
                 <div class="uk-container">
 
                     <div class="uk-container-expand">
 
-
-                        <!-- Contenido -->
-
-
                         <div class="uk-overflow-auto">
-                            <table id="tabla-escuela" class="limite uk-table uk-table-middle uk-table-hover uk-table-striped uk-margin-small-top">
+
+                        <!--  CONTENIDO TABLAS  -->
+                            <table id="tabla-escuela" class="uk-table uk-table-middle uk-table-hover uk-table-striped uk-margin-small-top">
 
                             <thead>
                             <tr>
@@ -199,8 +199,8 @@
                                             <ul class="uk-nav uk-dropdown-nav uk-text-left">
                                                 <label>
                                                     <li><a  href="Detalle-Profesor.html">
-                                                        <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
-                                                        <span class="uk-text-middle">detalle</span></a>
+                                                        <span uk-icon="icon: file-text" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">detalle</span></a>
                                                     </li>
 
                                                 </label>
@@ -208,7 +208,7 @@
                                                 <label>
                                                     <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
                                                         <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
-                                                        <span class="uk-text-middle">editar</span></a>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
                                                     </li>
 
                                                 </label>
@@ -217,7 +217,7 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-eliminar">
                                                             <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">eliminar</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
                                                         </a>
                                                     </li>
 
@@ -227,7 +227,7 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-bloqueo">
                                                             <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">bloquear</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">bloquear</span>
                                                         </a>
                                                     </li>
 
@@ -237,7 +237,7 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-reporte">
                                                             <span uk-icon="icon:  file-pdf" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">reportes</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">reportes</span>
                                                         </a>
                                                     </li>
                                                 </label>
@@ -251,20 +251,20 @@
                             </tr>
 
 
-                            <tr class="">
-                                <td><span class="uk-text-middle">Benito Juarez</span></td>
+                            <tr>
+                                <td><span class="uk-text-center">Benito Juarez</span></td>
                                 <td><span class="uk-text-middle">10</span></td>
                                 <td><span class="uk-text-middle">8</span></td>
-                                <td><span class="uk-text-middle">10</span></td>
+                                <td><span class="uk-text-middle">1</span></td>
                                 <td>
-                                    <div class=" boundary">
-                                        <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                    <div class="boundary ">
+                                        <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                         <div uk-dropdown="mode: click; boundary: .boundary">
                                             <ul class="uk-nav uk-dropdown-nav uk-text-left">
                                                 <label>
-                                                    <li><a href="#">
-                                                        <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
-                                                        <span class="uk-text-middle">detalle</span></a>
+                                                    <li><a  href="Detalle-Profesor.html">
+                                                        <span uk-icon="icon: file-text" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">detalle</span></a>
                                                     </li>
 
                                                 </label>
@@ -272,7 +272,7 @@
                                                 <label>
                                                     <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
                                                         <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
-                                                        <span class="uk-text-middle">editar</span></a>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
                                                     </li>
 
                                                 </label>
@@ -281,7 +281,7 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-eliminar">
                                                             <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">eliminar</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
                                                         </a>
                                                     </li>
 
@@ -291,7 +291,7 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-bloqueo">
                                                             <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">bloquear</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">bloquear</span>
                                                         </a>
                                                     </li>
 
@@ -301,13 +301,205 @@
                                                     <li>
                                                         <a href="#" uk-toggle="target: #modal-reporte">
                                                             <span uk-icon="icon:  file-pdf" class="uk-margin-small-right uk-icon"></span>
-                                                            <span class="uk-text-middle">reportes</span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">reportes</span>
                                                         </a>
                                                     </li>
                                                 </label>
                                             </ul>
                                         </div>
                                     </div>
+
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="uk-text-center">Benito Juarez</span></td>
+                                <td><span class="uk-text-middle">10</span></td>
+                                <td><span class="uk-text-middle">8</span></td>
+                                <td><span class="uk-text-middle">1</span></td>
+                                <td>
+                                    <div class="boundary ">
+                                        <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
+                                        <div uk-dropdown="mode: click; boundary: .boundary">
+                                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
+                                                <label>
+                                                    <li><a  href="Detalle-Profesor.html">
+                                                        <span uk-icon="icon: file-text" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">detalle</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
+                                                        <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-eliminar">
+                                                            <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-bloqueo">
+                                                            <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">bloquear</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-reporte">
+                                                            <span uk-icon="icon:  file-pdf" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">reportes</span>
+                                                        </a>
+                                                    </li>
+                                                </label>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="uk-text-center">Benito Juarez</span></td>
+                                <td><span class="uk-text-middle">10</span></td>
+                                <td><span class="uk-text-middle">8</span></td>
+                                <td><span class="uk-text-middle">1</span></td>
+                                <td>
+                                    <div class="boundary ">
+                                        <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
+                                        <div uk-dropdown="mode: click; boundary: .boundary">
+                                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
+                                                <label>
+                                                    <li><a  href="Detalle-Profesor.html">
+                                                        <span uk-icon="icon: file-text" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">detalle</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
+                                                        <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-eliminar">
+                                                            <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-bloqueo">
+                                                            <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">bloquear</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-reporte">
+                                                            <span uk-icon="icon:  file-pdf" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">reportes</span>
+                                                        </a>
+                                                    </li>
+                                                </label>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><span class="uk-text-center">Benito Juarez</span></td>
+                                <td><span class="uk-text-middle">10</span></td>
+                                <td><span class="uk-text-middle">8</span></td>
+                                <td><span class="uk-text-middle">1</span></td>
+                                <td>
+                                    <div class="boundary ">
+                                        <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
+                                        <div uk-dropdown="mode: click; boundary: .boundary">
+                                            <ul class="uk-nav uk-dropdown-nav uk-text-left">
+                                                <label>
+                                                    <li><a  href="Detalle-Profesor.html">
+                                                        <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">detalle</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
+                                                        <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                        <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-eliminar">
+                                                            <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-bloqueo">
+                                                            <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">bloquear</span>
+                                                        </a>
+                                                    </li>
+
+                                                </label>
+
+                                                <label>
+                                                    <li>
+                                                        <a href="#" uk-toggle="target: #modal-reporte">
+                                                            <span uk-icon="icon:  file-pdf" class="uk-margin-small-right uk-icon"></span>
+                                                            <span class="uk-text-middle uk-text-bold uk-text-capitalize">reportes</span>
+                                                        </a>
+                                                    </li>
+                                                </label>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+
                                 </td>
                             </tr>
 
@@ -320,6 +512,10 @@
 
                         </table>
 
+                        <!--  FIN CONTENIDO TABLAS -->
+
+
+                            <!--  BARRA DE NAVEGACION  -->
 
 
                             <div class="uk-margin" uk-grid>
@@ -340,27 +536,26 @@
                                 <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-1-1@s uk-width-1-2@m">
 
                                     <button class="uk-button uk-button-primary " uk-toggle="target: #modal-nuevo-profesor"><span class="uk-text-left uk-icon" uk-icon="icon: plus-circle">AGREGAR &nbsp</span></button>
-                                        <span>&nbsp</span>
+                                    <span>&nbsp</span>
                                     <button class="uk-button uk-button-primary " uk-toggle="target: #modal-csv"><span class="uk-text-left uk-icon" uk-icon="icon: file-text "> &nbsp &nbsp &nbsp CSV &nbsp &nbsp &nbsp</span></button>
                                 </div>
                             </div>
 
-
-
-
-
-
-
-                            <!--  CONTENIDO  -->
+                            <!--  FIN DE BARRA DE NAVEGACION  -->
 
                         </div>
 
                     </div>
                 </div>
+
+                <!-- Fin Multimedia -->
+
             </div>
 
+        </div>
+
     </div>
-</div>
+    <!-- END CONTENT -->
 
 <div id="modal-csv" class="uk-modal-container" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
