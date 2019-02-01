@@ -80,9 +80,9 @@
                 <li class="uk-nav-header">dashboard</li>
 
                 <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li><a href="#"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                <li><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
-                <li><a href="#"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
+                <li><a href="CatalagoAdministrador.html"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
             </ul>
         </div>
         <div class="bar-bottom">
@@ -126,38 +126,19 @@
                                                </tr>
                                                </thead>
                                                <tbody>
+
                                                <tr>
                                                    <td>Falta de pago</td>
-                                                   <td>
-                                                       <div class=" boundary">
-                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
-                                                           <div uk-dropdown="mode: click; boundary: .boundary">
-                                                               <ul class="uk-nav uk-dropdown-nav">
-                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
-
-                                                               </ul>
-                                                           </div>
-                                                       </div>
-                                                   </td>
-
                                                    <td>
                                                        <div class="boundary ">
                                                            <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                            <div uk-dropdown="mode: click; boundary: .boundary">
                                                                <ul class="uk-nav uk-dropdown-nav uk-text-left">
-                                                                   <label>
-                                                                       <li><a  href="Detalle-Profesor.html">
-                                                                           <span uk-icon="icon: info" class="uk-margin-small-right uk-icon"></span>
-                                                                           <span class="uk-text-middle uk-text-capitalize uk-text-bold">Detalle</span></a>
-                                                                       </li>
-
-                                                                   </label>
 
                                                                    <label>
-                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-profesor">
+                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
                                                                            <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
-                                                                           <span class="uk-text-middle uk-text-capitalize  uk-text-bold">editar</span></a>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
                                                                        </li>
 
                                                                    </label>
@@ -166,41 +147,47 @@
                                                                        <li>
                                                                            <a href="#" uk-toggle="target: #modal-eliminar">
                                                                                <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
-                                                                               <span class="uk-text-middle uk-text-capitalize  uk-text-bold">eliminar</span>
+                                                                               <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
                                                                            </a>
                                                                        </li>
 
                                                                    </label>
 
-                                                                   <label>
-                                                                       <li>
-                                                                           <a href="#" uk-toggle="target: #modal-bloqueo">
-                                                                               <span uk-icon="icon:  ban" class="uk-margin-small-right uk-icon"></span>
-                                                                               <span class="uk-text-middle uk-text-capitalize  uk-text-bold">bloquear</span>
-                                                                           </a>
-                                                                       </li>
-
-                                                                   </label>
 
 
                                                                </ul>
                                                            </div>
                                                        </div>
-
-
-
                                                    </td>
                                                </tr>
 
                                                <tr>
                                                    <td>Cambio de razon social</td>
                                                    <td>
-                                                       <div class=" boundary">
-                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div class="boundary ">
+                                                           <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                               <ul class="uk-nav uk-dropdown-nav">
-                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                               <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                                   <label>
+                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                           <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                       </li>
+
+                                                                   </label>
+
+                                                                   <label>
+                                                                       <li>
+                                                                           <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                               <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                               <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                           </a>
+                                                                       </li>
+
+                                                                   </label>
+
+
 
                                                                </ul>
                                                            </div>
@@ -212,12 +199,30 @@
                                                <tr>
                                                    <td>Razon 3</td>
                                                    <td>
-                                                       <div class=" boundary">
-                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div class="boundary ">
+                                                           <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                               <ul class="uk-nav uk-dropdown-nav">
-                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                               <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                                   <label>
+                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                           <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                       </li>
+
+                                                                   </label>
+
+                                                                   <label>
+                                                                       <li>
+                                                                           <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                               <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                               <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                           </a>
+                                                                       </li>
+
+                                                                   </label>
+
+
 
                                                                </ul>
                                                            </div>
@@ -230,12 +235,30 @@
                                                <tr>
                                                    <td>Razon 4</td>
                                                    <td>
-                                                       <div class=" boundary">
-                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div class="boundary ">
+                                                           <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                               <ul class="uk-nav uk-dropdown-nav">
-                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                               <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                                   <label>
+                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                           <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                       </li>
+
+                                                                   </label>
+
+                                                                   <label>
+                                                                       <li>
+                                                                           <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                               <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                               <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                           </a>
+                                                                       </li>
+
+                                                                   </label>
+
+
 
                                                                </ul>
                                                            </div>
@@ -243,17 +266,34 @@
                                                    </td>
 
                                                </tr>
-
 
                                                <tr>
                                                    <td>Razon 5</td>
                                                    <td>
-                                                       <div class=" boundary">
-                                                           <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                       <div class="boundary ">
+                                                           <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                            <div uk-dropdown="mode: click; boundary: .boundary">
-                                                               <ul class="uk-nav uk-dropdown-nav">
-                                                                   <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                                   <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                               <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                                   <label>
+                                                                       <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                           <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                       </li>
+
+                                                                   </label>
+
+                                                                   <label>
+                                                                       <li>
+                                                                           <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                               <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                               <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                           </a>
+                                                                       </li>
+
+                                                                   </label>
+
+
 
                                                                </ul>
                                                            </div>
@@ -261,10 +301,11 @@
                                                    </td>
 
                                                </tr>
+
                                                </tbody>
                                                <tfoot>
                                                <tr>
-                                                   <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                                   <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 1 : Total 5</span></td>
                                                </tr>
                                                </tfoot>
                                            </table>
@@ -293,7 +334,7 @@
                                        </div>
                                    </div>
                                    <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-expand">
-                                       <button class="uk-button uk-button-primary " >
+                                       <button class="uk-button uk-button-primary " uk-toggle="target: #modal-nuevo-motivo" >
 
                                            <span uk-icon="icon: plus-circle"></span>
                                            <div  class="uk-flex-top" uk-modal>
@@ -319,15 +360,34 @@
                                            </tr>
                                            </thead>
                                            <tbody>
+
                                            <tr>
                                                <td>Coordinador</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -338,30 +398,66 @@
 
                                            <tr>
                                                <td>Director</td>
-                                               <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
-                                                       <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                <td>
+                                               <div class="boundary ">
+                                                   <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
+                                                   <div uk-dropdown="mode: click; boundary: .boundary">
+                                                       <ul class="uk-nav uk-dropdown-nav uk-text-left">
 
-                                                           </ul>
-                                                       </div>
+                                                           <label>
+                                                               <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                   <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                   <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                               </li>
+
+                                                           </label>
+
+                                                           <label>
+                                                               <li>
+                                                                   <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                       <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                   </a>
+                                                               </li>
+
+                                                           </label>
+
+
+
+                                                       </ul>
                                                    </div>
-                                               </td>
+                                               </div>
+                                           </td>
 
                                            </tr>
 
                                            <tr>
                                                <td>Tipo 3</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -374,12 +470,30 @@
                                            <tr>
                                                <td>Tipo 4</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -392,12 +506,30 @@
                                            <tr>
                                                <td>Tipo 5</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-catalogo">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -405,10 +537,11 @@
                                                </td>
 
                                            </tr>
+
                                            </tbody>
                                            <tfoot>
                                            <tr>
-                                               <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                               <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 1 : Total 5</span></td>
                                            </tr>
                                            </tfoot>
                                        </table>
@@ -435,7 +568,7 @@
                                        </div>
                                    </div>
                                    <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-expand">
-                                       <button class="uk-button uk-button-primary " >
+                                       <button class="uk-button uk-button-primary" uk-toggle="target: #modal-nuevo-contacto" >
 
                                            <span uk-icon="icon: plus-circle"></span>
                                            <div id="my-id" class="uk-flex-top" uk-modal>
@@ -468,15 +601,39 @@
                                            </tr>
                                            </thead>
                                            <tbody>
+
                                            <tr>
-                                               <td>Coordinador</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   72730
+                                               </td>
+                                               <td>Reforma</td>
+                                               <td>Puebla</td>
+                                               <td>Puebla</td>
+                                               <td>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-colonia">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -486,14 +643,37 @@
                                            </tr>
 
                                            <tr>
-                                               <td>Director</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   72730
+                                               </td>
+                                               <td>Reforma</td>
+                                               <td>Puebla</td>
+                                               <td>Puebla</td>
+                                               <td>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-colonia">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -503,14 +683,37 @@
                                            </tr>
 
                                            <tr>
-                                               <td>Tipo 3</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   72730
+                                               </td>
+                                               <td>Reforma</td>
+                                               <td>Puebla</td>
+                                               <td>Puebla</td>
+                                               <td>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-colonia">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -518,17 +721,39 @@
                                                </td>
 
                                            </tr>
-
 
                                            <tr>
-                                               <td>Tipo 4</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   72730
+                                               </td>
+                                               <td>Reforma</td>
+                                               <td>Puebla</td>
+                                               <td>Puebla</td>
+                                               <td>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-colonia">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -536,17 +761,39 @@
                                                </td>
 
                                            </tr>
-
 
                                            <tr>
-                                               <td>Tipo 5</td>
                                                <td>
-                                                   <div class=" boundary">
-                                                       <a class="uk-icon-button uk-margin-small-right" uk-icon="icon: more-vertical" ></a>
+                                                   72730
+                                               </td>
+                                               <td>Reforma</td>
+                                               <td>Puebla</td>
+                                               <td>Puebla</td>
+                                               <td>
+                                                   <div class="boundary ">
+                                                       <a class="uk-icon-button uk-margin-small-right uk-text-left" uk-icon="icon: more-vertical " ></a>
                                                        <div uk-dropdown="mode: click; boundary: .boundary">
-                                                           <ul class="uk-nav uk-dropdown-nav">
-                                                               <li><span uk-icon="icon: trash" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold "><a class="uk-link-reset" href="#" uk-toggle="">Eliminar</a></span></li>
-                                                               <li><span uk-icon="icon: settings" class="uk-margin-small-right" ></span><span class="uk-text-right uk-text-bold"><a class="uk-link-reset" href="#" uk-toggle="">Modificar</a></span></li>
+                                                           <ul class="uk-nav uk-dropdown-nav uk-text-left">
+
+                                                               <label>
+                                                                   <li><a href="#"  uk-toggle="target: #modal-editar-colonia">
+                                                                       <span uk-icon="icon: file-edit" class="uk-margin-small-right uk-icon"></span>
+                                                                       <span class="uk-text-middle uk-text-bold uk-text-capitalize">editar</span></a>
+                                                                   </li>
+
+                                                               </label>
+
+                                                               <label>
+                                                                   <li>
+                                                                       <a href="#" uk-toggle="target: #modal-eliminar">
+                                                                           <span uk-icon="icon:  trash" class="uk-margin-small-right uk-icon"></span>
+                                                                           <span class="uk-text-middle uk-text-bold uk-text-capitalize">eliminar</span>
+                                                                       </a>
+                                                                   </li>
+
+                                                               </label>
+
+
 
                                                            </ul>
                                                        </div>
@@ -554,10 +801,14 @@
                                                </td>
 
                                            </tr>
+
+
+
+
                                            </tbody>
                                            <tfoot>
                                            <tr>
-                                               <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 4 : Total 45</span></td>
+                                               <td colspan="5" class="uk-background-primary uk-text-left"><span class="titulo-blanco">Página 1 de 1 : Total 5</span></td>
                                            </tr>
                                            </tfoot>
                                        </table>
@@ -583,15 +834,30 @@
                                            </select>
                                        </div>
                                    </div>
+
                                    <div class="uk-panel uk-flex uk-flex-right@m uk-flex-center@s uk-width-expand">
-                                       <button class="uk-button uk-button-primary " >
+                                       <button class="uk-button uk-button-primary" uk-toggle="target: #modal-nueva-colonia" >
 
                                            <span uk-icon="icon: plus-circle"></span>
-                                           <div id="my-id" class="uk-flex-top" uk-modal>
+                                           <div  class="uk-flex-top" uk-modal>
                                                <div class="uk-modal-dialog uk-margin-auto-vertical"></div>
                                            </div>
                                        </button>
                                    </div>
+                               </div>
+
+                               <div class="uk-margin" data-uk-grid="">
+                                   <div class="uk-panel uk-flex uk-flex-between uk-width-expand uk-flex-center@s">
+                                       <div class="uk-form-controls uk-margin-small-right "><input  class="uk-input" placeholder="Ingresa Codigo Postal" type="text">
+                                       </div>
+                                       <button class="uk-button uk-button-secondary uk-margin-small-right "  type="button">
+                                           <span >Busca C.P.</span>
+                                           <span uk-icon="icon: location" class="uk-icon uk-margin-small-right"></span>
+                                       </button>
+
+                                   </div>
+
+
                                </div>
 
 
@@ -605,7 +871,7 @@
 
             </div>
 
-            <!--  CONTENIDO  -->
+            <!-- FIN  CONTENIDO  -->
 
         </div>
     </div>    <!-- OFFCANVAS  -->
@@ -649,6 +915,161 @@
         </div>
     </div>
     <!-- /OFFCANVAS -->
+</div>
+
+<div id="modal-editar-catalogo"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Editar Catalogo</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Editar </h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-1@m uk-first-column">MotivoBloqueo/TipoContacto/Colonias</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="Nombre Dato" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-editar-colonia"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Editar colonia</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Editar </h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-1@m uk-first-column">Colonia</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="Nuevo nombre" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="modal-nuevo-motivo"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Motivo de Bloque</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Nuevo</h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-1@m uk-first-column">MotivoBloqueo</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="Nombre Dato" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-nuevo-contacto"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Tipo de Contacto</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Nuevo</h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-1@m uk-first-column">Tipo de Contacto</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="Nombre Dato" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-nueva-colonia"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <div class="uk-modal-header uk-background-secondary">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Agregar Colonia</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <h1 class="uk-modal-title uk-text-left">Nuevo</h1>
+            <div class="uk-grid-small uk-grid" uk-grid="">
+                <div class="uk-width-1-1@s uk-width-1-1@m uk-first-column">Colonia</label>
+                    <div class="uk-form-controls"><input  class="uk-input" placeholder="Nombre Dato" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ARCHIVO CSV -->
+
+            <!--  CONTENIDO  -->
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button uk-button-secondary" type="button">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<div id="modal-eliminar"  uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical">
+        <button class="uk-modal-close-default titulo-blanco" type="button" uk-close></button>
+        <div class="uk-modal-header fondo-peligro">
+            <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo"> Eliminar Profesor</span></p>
+        </div>
+        <div class="uk-modal-body">
+            <p>¿Está seguro en borrar la escuela Benito Juarez?, no se prodrá recuperar los datos
+            </p>
+
+        </div>
+        <div class="uk-modal-footer uk-text-right">
+            <button class="uk-button uk-button-default uk-modal-close" type="button">Cancelar</button>
+            <button class="uk-button fondo-peligro" type="button"><span class="letra-titulo">Eliminar</span></button>
+        </div>
+    </div>
 </div>
 
 <script src="../js/uikit.js" ></script>
