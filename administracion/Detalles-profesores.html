@@ -84,9 +84,21 @@
                 <li class="uk-nav-header">dashboard</li>
 
                 <!-- <li><a href="#"><span data-uk-icon="icon: album" class="uk-margin-small-right"></span></a></li> -->
-                <li><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
+                <li class=""><a href="dashboard.html"><span data-uk-icon="icon: table" class="uk-margin-small-right"></span>Escuelas</a></li>
                 <!-- <li><a href="#"><span data-uk-icon="icon: lifesaver" class="uk-margin-small-right"></span>Tips</a></li> -->
-                <li><a href="CatalagoAdministrador.html"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a></li>
+                <li class="uk-parent">
+                    <a href="CatalagoAdministrador.html"><span data-uk-icon="icon: database" class="uk-margin-small-right"></span>Catálogos</a>
+                    <ul class="uk-nav-sub">
+                        <li><a href="CatalagoAdministrador.html"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Adminsitrador</a>
+                        </li>
+                        <li><a href="Coord-Profe.html"><span data-uk-icon="icon: users" class="uk-margin-small-right"></span>Coordinador/Profesor</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
             </ul>
         </div>
         <div class="bar-bottom">
@@ -435,7 +447,7 @@
     </div>
     <!-- END CONTENT -->
 
-<div id="modal-csv" class="uk-modal-container" uk-modal>
+<div id="modal-csv" uk-modal>
     <div class="uk-modal-dialog uk-margin-auto-vertical">
         <div class="uk-modal-header uk-background-secondary">
             <p class="uk-h4 uk-text-center uk-text-bold"><span class="letra-titulo">Subir Archivo CSV</span></p>
