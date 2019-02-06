@@ -2877,23 +2877,24 @@ select.uk-form-width-xsmall {
   background: #fff;
   color: #666;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
 }
 .uk-card-default .uk-card-title {
-  color: #333;
+color: #333;
 }
 .uk-card-default.uk-card-hover:hover {
-  background-color: #fff;
-  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
+background-color: #fff;
+box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
 }
 .uk-card-default .uk-card-header {
-  border-bottom: 1px solid #e5e5e5;
+border-bottom: 1px solid #e5e5e5;
 }
 .uk-card-default .uk-card-footer {
-  border-top: 1px solid #e5e5e5;
+border-top: 1px solid #e5e5e5;
 }
 /*
- * Primary
- */
+* Primary
+*/
 .uk-card-primary {
   background: #1e87f0;
   color: #fff;
