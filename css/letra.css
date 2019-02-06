@@ -16,6 +16,9 @@ top: 10px;
 .letra-titulo{
   color:white;
 }
+.letra-enlace{
+    color:blue;
+}
 
 .fondo-peligro{
     background-color: #f0506e;
