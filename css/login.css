@@ -1,6 +1,11 @@
 body{
-    background-color:#1d1d1d;
-    overflow:hidden;
+    /*background-color:#1d1d1d;*/
+    /*overflow:hidden;*/
+    background-image: url("../img/space4.gif");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
 }
 body, html {
     height: 100%;
@@ -14,11 +19,16 @@ svg{
     height:100%;
 }
 
+
 text{
     fill:red;
 }
 
 .fondo-astronauta{
-    background-color:#1d1d1d;
-    overflow:hidden;
+background-color: white;
+}
+
+.opacity {
+    background-color: rgba(255,255,255,.1);
+
 }
