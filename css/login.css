@@ -17,3 +17,8 @@ svg{
 text{
     fill:red;
 }
+
+.fondo-astronauta{
+    background-color:#1d1d1d;
+    overflow:hidden;
+}
